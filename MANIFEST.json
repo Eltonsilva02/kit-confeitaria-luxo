@@ -1,7 +1,7 @@
 {
   "ASSETS.md": {
-    "bytes": 4245,
-    "sha256": "86c8fccaa039d6f38ab68224da51b3bd72a67db6788b5a3b287d66601c6c43b7"
+    "bytes": 3767,
+    "sha256": "8796188fd5ab62c9d1c6284968bbbd83170b44842ab2f7b574ec1d49b1dd0c8d"
   },
   "COPY.md": {
     "bytes": 6130,
@@ -72,28 +72,28 @@
     "sha256": "b93077166ca936f242fd7eea7ec7898bfed59cd2b085c465cb74f8e1bc527d36"
   },
   "assets/carrossel-01.webp": {
-    "bytes": 36694,
-    "sha256": "4e2ff0cef28c988b406eb3d0788729338a80ca00fe38f60524b7bed5373991f2"
+    "bytes": 24164,
+    "sha256": "a187ed42942f1f9c8efb840fdb1ad88c5012bb81593416598433b2dbb39b6f47"
   },
   "assets/carrossel-02.webp": {
-    "bytes": 8272,
-    "sha256": "a132fe0661530b48f20ee74ce9cc91e933315cf241441b43e4f58fd07caba75c"
+    "bytes": 42468,
+    "sha256": "483f54a7a029951d80a6c15b180f94983d281bb2de8e0b72feb9a4b9d0c7e13b"
   },
   "assets/carrossel-03.webp": {
-    "bytes": 14912,
-    "sha256": "b96ae3e3d26232a7175e95408ed9978b18953c5ae839dcdb9c5c0416858f5a43"
+    "bytes": 34720,
+    "sha256": "0610dde10a8555a49ad1d92c0f61e06ecc64877b57668fb027a76b2b623b3192"
   },
   "assets/carrossel-04.webp": {
-    "bytes": 20680,
-    "sha256": "2c4c6fc3c14026c6cba6b7c719883dd7a1bd8d4f6db1492966e4760860337108"
+    "bytes": 78484,
+    "sha256": "b4d769393fa0111f2c94c5b4cd35d7272081182191ad797025507b4f3915cf3c"
   },
   "assets/carrossel-05.webp": {
-    "bytes": 19688,
-    "sha256": "a3a518cb01b5f6ec0daea63418ec824854c2f2a079f7f34182971ae2f6c70399"
+    "bytes": 30330,
+    "sha256": "478660b5b9bb80b4b36712463638a7725cc7b26e4d42d00ed60271c7a78679c3"
   },
   "assets/carrossel-06.webp": {
-    "bytes": 30298,
-    "sha256": "eec7255ab396f91edaacdc14a7c50af25d1306dba647c21206b4550d7df61dd5"
+    "bytes": 23230,
+    "sha256": "b62f902e44a909b25d0c6412bc28c74a39fd362dabcd586646a72462bbfb12ae"
   },
   "assets/hero-confeitaria-luxo.webp": {
     "bytes": 154350,
@@ -123,24 +123,8 @@
     "bytes": 200988,
     "sha256": "ed72110efe1ee206881caeae8d412766f9cecfad8a001e0222248f1580125554"
   },
-  "assets/carrossel-07.webp": {
-    "bytes": 21838,
-    "sha256": "e86421df06112826a9b6293cfc640e2a348b912bf116b88d420156e7568b075d"
-  },
-  "assets/carrossel-08.webp": {
-    "bytes": 38362,
-    "sha256": "fbdcc35f09f7bea21dc6033eae9018fe17becc05c857ee1529be24ff4dab6fe3"
-  },
-  "assets/carrossel-09.webp": {
-    "bytes": 31478,
-    "sha256": "e57ae8ae065a93f857c52bf5d6eac057fd27a3859a63f090450805509f766d09"
-  },
-  "assets/carrossel-10.webp": {
-    "bytes": 70638,
-    "sha256": "1be3b7919b7d24ad0dff9e2a8ea1a5c3ac121b086297cb2fa04c35c8fd487779"
-  },
   "index.html": {
-    "bytes": 58359,
-    "sha256": "081c4d476186118859abb453e48512f348dcfa271418e8bf9836e5ff502bcc5f"
+    "bytes": 59567,
+    "sha256": "c7758619cc8b50448623af05cfd9552d7b9d77a442783226ba791b836dfb3103"
   }
 }

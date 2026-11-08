@@ -21,3 +21,4 @@ Esta página é 100% estática e pode ser hospedada com 1 clique em:
 - [Netlify](https://netlify.com)
 - [Cloudflare Pages](https://pages.cloudflare.com)
 - [GitHub Pages](https://pages.github.com)
+

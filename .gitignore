@@ -8,3 +8,4 @@ new-*.png
 test-summary.json
 .system_generated/
 *.log
+

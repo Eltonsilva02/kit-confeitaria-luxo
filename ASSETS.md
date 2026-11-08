@@ -11,6 +11,16 @@ Capas e prévias de arquivos existentes; não são fotografias de impressão nem
 | assets/previa-tags.webp | originais/previa-tags.png | produto/basico/07_Tags_de_Presente.pdf | 2 | Ambos | 1075×1521 | 54350 |
 | assets/previa-vitrine.webp | originais/previa-vitrine.png | produto/completo/10_Templates_de_Vitrine_Instagram.pdf | 2 | Completo | 1950×2438 | 119772 |
 | assets/previa-guia.webp | originais/previa-guia.png | produto/completo/13_Bonus_Guia_de_Impressao_e_Acabamento.pdf | 2 | Completo | 1075×1521 | 97080 |
+| assets/carrossel-01.webp | assets/novos/carrossel-01.png | Dobra 2 - Selos redondos de pote | 2 | Ambos | 600×848 | 36694 |
+| assets/carrossel-02.webp | assets/novos/carrossel-02.png | Dobra 2 - Templates Stories Vitrine | 2 | Completo | 540×960 | 8272 |
+| assets/carrossel-03.webp | assets/novos/carrossel-03.png | Dobra 2 - Topper dobrável Boas Festas | 2 | Ambos | 600×848 | 14912 |
+| assets/carrossel-04.webp | assets/novos/carrossel-04.png | Dobra 2 - Rótulos em arco Feito com carinho | 2 | Ambos | 600×848 | 20680 |
+| assets/carrossel-05.webp | assets/novos/carrossel-05.png | Dobra 2 - Bandeirolas Boas Festas | 2 | Ambos | 600×848 | 19688 |
+| assets/carrossel-06.webp | assets/novos/carrossel-06.png | Dobra 2 - Selos guirlanda Feliz Natal | 2 | Ambos | 600×848 | 30298 |
+| assets/carrossel-07.webp | assets/novos/carrossel-07.png | Dobra 2 - Caixa pirâmide 4 pétalas verde natalina | 2 | Ambos | 600×848 | 21838 |
+| assets/carrossel-08.webp | assets/novos/carrossel-08.png | Dobra 2 - Caixa 12 doces tampa verde luxo | 2 | Ambos | 600×848 | 38362 |
+| assets/carrossel-09.webp | assets/novos/carrossel-09.png | Dobra 2 - Caixa 4 brigadeiros tampa vermelha | 2 | Ambos | 600×848 | 31478 |
+| assets/carrossel-10.webp | assets/novos/carrossel-10.png | Dobra 2 - Molde luxuoso para caixa natalina | 2 | Ambos | 600×848 | 70638 |
 
 ## Inspeção pontual — 07/11/2026, 17h45 (America/Sao_Paulo)
 Capa 02 fonte inspecionada visualmente: miniatura mudou de arco para janela retangular, mantendo título/estrutura; original e WebP sincronizados, sem editar a arte. PDF atual renderizado via pdftoppm, página 2, 130 dpi: janela retangular confirmada; original PNG e WebP da prévia atualizados. Aprovação relatada pela Claquete não autoriza publicação. Completo ainda bloqueado pelo teste celular real P3, C5/B1 e demais gates.

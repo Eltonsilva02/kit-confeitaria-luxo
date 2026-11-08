@@ -1,7 +1,7 @@
 {
   "ASSETS.md": {
-    "bytes": 2895,
-    "sha256": "c4b770a5efe89ef794a08a9db171d7c6f3ac2a52af9519053427ca5f13a6f048"
+    "bytes": 4245,
+    "sha256": "86c8fccaa039d6f38ab68224da51b3bd72a67db6788b5a3b287d66601c6c43b7"
   },
   "COPY.md": {
     "bytes": 6130,
@@ -122,5 +122,25 @@
   "assets/receber-tudo.webp": {
     "bytes": 200988,
     "sha256": "ed72110efe1ee206881caeae8d412766f9cecfad8a001e0222248f1580125554"
+  },
+  "assets/carrossel-07.webp": {
+    "bytes": 21838,
+    "sha256": "e86421df06112826a9b6293cfc640e2a348b912bf116b88d420156e7568b075d"
+  },
+  "assets/carrossel-08.webp": {
+    "bytes": 38362,
+    "sha256": "fbdcc35f09f7bea21dc6033eae9018fe17becc05c857ee1529be24ff4dab6fe3"
+  },
+  "assets/carrossel-09.webp": {
+    "bytes": 31478,
+    "sha256": "e57ae8ae065a93f857c52bf5d6eac057fd27a3859a63f090450805509f766d09"
+  },
+  "assets/carrossel-10.webp": {
+    "bytes": 70638,
+    "sha256": "1be3b7919b7d24ad0dff9e2a8ea1a5c3ac121b086297cb2fa04c35c8fd487779"
+  },
+  "index.html": {
+    "bytes": 58359,
+    "sha256": "081c4d476186118859abb453e48512f348dcfa271418e8bf9836e5ff502bcc5f"
   }
 }

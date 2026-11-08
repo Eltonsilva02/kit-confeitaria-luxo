@@ -1,0 +1,126 @@
+{
+  "ASSETS.md": {
+    "bytes": 2895,
+    "sha256": "c4b770a5efe89ef794a08a9db171d7c6f3ac2a52af9519053427ca5f13a6f048"
+  },
+  "COPY.md": {
+    "bytes": 6130,
+    "sha256": "e35b7096f357f4359b50fabf9cdbd83c276f1a938f62145750bb0a3809535eef"
+  },
+  "PROMPT.md": {
+    "bytes": 6763,
+    "sha256": "b0c7447a6ea5b752a308607967dffe1a559841529cce008f74266239cb281b38"
+  },
+  "assets/capa-01.webp": {
+    "bytes": 48462,
+    "sha256": "917d9ccb0b376daeee9031d81df1ffefb430a6da18f20ce125f0e4a817a81e73"
+  },
+  "assets/capa-02.webp": {
+    "bytes": 64932,
+    "sha256": "c34fcb90b8c0b6a6f0eec6ca65bf984ae661a63d092b3c106131865e27be63bf"
+  },
+  "assets/capa-03.webp": {
+    "bytes": 55734,
+    "sha256": "2a29829097d168ea60fa3d7d9767433a94d7558d8ddd8af3276d499ef27272b3"
+  },
+  "assets/previa-catalogo.webp": {
+    "bytes": 50590,
+    "sha256": "a0dd9a171ba0cc50f14787841c9ade24cad7409138b3b517f15b43843ff6cfcd"
+  },
+  "assets/previa-guia.webp": {
+    "bytes": 97080,
+    "sha256": "4d873ad09092c097ea0569978b86bd7c526ab766763b97630576df98a7397c32"
+  },
+  "assets/previa-tags.webp": {
+    "bytes": 54350,
+    "sha256": "ccc64f0db73c871c585137b8b5567629cfe4bc687fa7f3443e9ca85a5760d112"
+  },
+  "assets/previa-vitrine.webp": {
+    "bytes": 119772,
+    "sha256": "f23b2b34821f3ddbda3573fbe3865c34157dc73daae2645aea80953637468e60"
+  },
+  "originais/01-modulo-1-embalagens-e-tags-de-grife.png": {
+    "bytes": 118739,
+    "sha256": "3391b74ae04fbc012b068b342e7eddb6b4b6337b772b1d021df5b8964f264cf5"
+  },
+  "originais/02-modulo-2-vitrine-e-vendas.png": {
+    "bytes": 169556,
+    "sha256": "024539c44b1497a0c87d19efd7eaf346d94926d89267df6f01d35e46d74f4b12"
+  },
+  "originais/03-modulo-3-bonus-exclusivos.png": {
+    "bytes": 127215,
+    "sha256": "9c4d38cd756ebd7c9f51b16f02ae66d2d79c1323da5eb176c44c693b7174e21b"
+  },
+  "originais/previa-catalogo.png": {
+    "bytes": 117377,
+    "sha256": "21c61ab730cf9e97256e9969b090a1f40de3bb345f8b771611a4ab81c288b2c6"
+  },
+  "originais/previa-guia.png": {
+    "bytes": 185340,
+    "sha256": "5301205fd1669fa8e58384ee556ae9fa02bb8cc6699dc3e711d3a545186c74a7"
+  },
+  "originais/previa-tags.png": {
+    "bytes": 95532,
+    "sha256": "c09353afc9b197c20fd8bc3be0d64b4fec8a33fe14ca1ce2ad95d74cb59c9a35"
+  },
+  "originais/previa-vitrine.png": {
+    "bytes": 218989,
+    "sha256": "f41f2b97ea3ff7774cc779cc021b241e358d110043b31031c6edd1bfc18ef1c3"
+  },
+  "whatstrack.html": {
+    "bytes": 1524,
+    "sha256": "b93077166ca936f242fd7eea7ec7898bfed59cd2b085c465cb74f8e1bc527d36"
+  },
+  "assets/carrossel-01.webp": {
+    "bytes": 36694,
+    "sha256": "4e2ff0cef28c988b406eb3d0788729338a80ca00fe38f60524b7bed5373991f2"
+  },
+  "assets/carrossel-02.webp": {
+    "bytes": 8272,
+    "sha256": "a132fe0661530b48f20ee74ce9cc91e933315cf241441b43e4f58fd07caba75c"
+  },
+  "assets/carrossel-03.webp": {
+    "bytes": 14912,
+    "sha256": "b96ae3e3d26232a7175e95408ed9978b18953c5ae839dcdb9c5c0416858f5a43"
+  },
+  "assets/carrossel-04.webp": {
+    "bytes": 20680,
+    "sha256": "2c4c6fc3c14026c6cba6b7c719883dd7a1bd8d4f6db1492966e4760860337108"
+  },
+  "assets/carrossel-05.webp": {
+    "bytes": 19688,
+    "sha256": "a3a518cb01b5f6ec0daea63418ec824854c2f2a079f7f34182971ae2f6c70399"
+  },
+  "assets/carrossel-06.webp": {
+    "bytes": 30298,
+    "sha256": "eec7255ab396f91edaacdc14a7c50af25d1306dba647c21206b4550d7df61dd5"
+  },
+  "assets/hero-confeitaria-luxo.webp": {
+    "bytes": 154350,
+    "sha256": "5c201ff8641ab9e5918a0661cbdeaa18643936c94b6a73984d605118bbbed91b"
+  },
+  "assets/oferta-produto.webp": {
+    "bytes": 154350,
+    "sha256": "5c201ff8641ab9e5918a0661cbdeaa18643936c94b6a73984d605118bbbed91b"
+  },
+  "assets/popup-prod-comp1.webp": {
+    "bytes": 44720,
+    "sha256": "2b31705b322f9ac19be9da2a1cc22d70408acd08c35731fb2dc0c38e4b2ff4dd"
+  },
+  "assets/popup-prod-comp2.webp": {
+    "bytes": 50138,
+    "sha256": "91bf289f937e05e11a3828bd9f6e28c25ae33a66bb3c1a79b308a03d20bf5ca9"
+  },
+  "assets/popup-prod-comp3.webp": {
+    "bytes": 55964,
+    "sha256": "38fbd879dde3768ea7c7696a24356e7704d575dd4aea051ab75f9ec56ac3a112"
+  },
+  "assets/popup-prod-principal.webp": {
+    "bytes": 56644,
+    "sha256": "0846934388d09e863c6f5723c76a7b6d95e8a16cd328fc8b692ccb8ac77dec0c"
+  },
+  "assets/receber-tudo.webp": {
+    "bytes": 200988,
+    "sha256": "ed72110efe1ee206881caeae8d412766f9cecfad8a001e0222248f1580125554"
+  }
+}

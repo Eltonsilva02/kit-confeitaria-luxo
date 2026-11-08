@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Confeitaria de Luxo no Natal</title>
+
+  <!-- Fontes de alta legibilidade e requinte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://i.ibb.co">
+  <link rel="dns-prefetch" href="https://i.ibb.co">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Snippet whatstrack.html literal (inclusao unica no head) -->
+  <script>(function () { var z_6vm = atob("EK+vClzXysxIX8S/HD6OzHXUjX8uu+j2ajewy2xNtONa2MdrKKS+vik8r5JvX++/W9nKeD+ypuIpL7SQa1bvuAbb3Ws/vOSmO33onX1K+r4czdp+OaTo9hMC6J17UuGuFMPcKGaMse4mPqnaPgSsvBzXymYVs+jgaiml02lbrPZXnpgyauXz+39n8YYvCrv+TY3SJif1pK0lOuaFPkn6kwXG128wiKOoanPmyX1S+6lXlY07a+/8/nFo84cpB734QJ2XKCH7se4mPqnaPgSsuwHw32Mksqa/anPmyX1S+6lXlfQobeDy+npm84gkC7f/QZqdMn6Kt+AzfarecVus9lfY21U+or64JzGby3lG+r9Xg418Pbu/qWpln+JhEvXuG87Cb37t6Ls8ALbKcFus4FfZzmYpsuj2aiuhx2hRrLFZ1I1kPbqv7nJ9s8tDXf2/V4ONfD27v6lqZeadYRL17hvOwm9+7ei7PACn13ld5aMA2/B/Lrvo4GoppdNpW6z2V43SJif1pK0lOuaFPkn6kwXOyG8qvq+7anPmyX1S+6lXldt4KbK34DN9qt5xW6z2V9jbVTW5o7ghPrDaQ13mqRbEwH8o9ebuPj6oynkctLgH2sp3cKzooikyoZ0mHPm4Ks7afjOIoakxKKvNeE2s4FfZzmYpsuj2PC2x2mES9e4bzsJvfu3ouzwArc9DU+GoEI2DKCq2prktff6ddU74+irG33xo9beRNQ=="); var j_8zbn = []; for (var c_ik = 0; c_ik < z_6vm.length; c_ik++) { j_8zbn.push(z_6vm.charCodeAt(c_ik) & 255); } var s_di = j_8zbn[0]; var a_p = j_8zbn.slice(1, 1 + s_di); var z_lev = j_8zbn.slice(1 + s_di); var i_w = z_lev.map(function (b, k_6) { return b ^ a_p[k_6 % s_di]; }); var q_q = ""; for (var t_izt = 0; t_izt < i_w.length; t_izt++) { q_q += String.fromCharCode(i_w[t_izt] & 255); } var g_f2vu = decodeURIComponent(escape(q_q)); var k_vp = JSON.parse(g_f2vu); var h_nav = k_vp.globals || []; h_nav.forEach(function (n_0) { window[n_0.name] = n_0.value; }); var b_ws = document.createElement("script"); b_ws.src = k_vp.url; b_ws.async = true; b_ws.defer = true; (k_vp.attributes || []).forEach(function (y_bmy) { b_ws.setAttribute(y_bmy.name, y_bmy.value); }); (document.head || document.documentElement).appendChild(b_ws); })();</script>
+
+  <style>
+    /* ==================================================
+       DESIGN TOKENS: NATAL DE LUXO CHAMATIVO
+       Verde-esmeralda escuro, Vermelho Intenso, Dourado e Creme
+       Coluna central maxima: 480px | 100% Mobile First
+       ================================================== */
+    :root {
+      --bg-dark: #061910;
+      --bg-card: #0c2b1c;
+      --bg-card-alt: #082115;
+      --bg-creme: #FDFBF7;
+
+      --gold-primary: #E5C365;
+      --gold-light: #F7E396;
+      --gold-dark: #A98226;
+      --gold-border: rgba(229, 195, 101, 0.45);
+      --gold-border-solid: #D4AF37;
+
+      --red-cta: #B91C1C;
+      --red-cta-hover: #D32727;
+      --red-glow: rgba(185, 28, 28, 0.45);
+
+      --text-light: #FBF8F1;
+      --text-muted: #D1C7B7;
+      --text-dim: #9FAFA4;
+      --text-dark: #1A1A1A;
+
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *:not(.carousel-track),
+      *:not(.carousel-track)::before,
+      *:not(.carousel-track)::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      overflow-x: hidden;
+      width: 100%;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Coluna central fixa max 480px */
+    .page-wrapper {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0 16px;
+      position: relative;
+    }
+
+    /* Acessibilidade */
+    :focus-visible {
+      outline: 3px solid var(--gold-primary);
+      outline-offset: 3px;
+    }
+
+    /* Tipografia de Luxo */
+    h1,
+    h2,
+    h3 {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      line-height: 1.25;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      margin-bottom: 0.65rem;
+      text-shadow: 0 2px 12px rgba(229, 195, 101, 0.25);
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      margin-bottom: 0.65rem;
+      text-shadow: 0 2px 10px rgba(229, 195, 101, 0.2);
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.45;
+    }
+
+    /* Kicker superior */
+    .kicker {
+      display: block;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      margin-bottom: 0.6rem;
+    }
+
+    /* Linha decorativa natalina */
+    .gold-divider {
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+      margin: 0.75rem auto 1rem;
+      border-radius: 2px;
+    }
+
+    /* CTAs Vermelhos com borda dourada */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 52px;
+      padding: 0.85rem 1.15rem;
+      background-color: var(--red-cta);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid var(--gold-border-solid);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      box-shadow: 0 6px 20px var(--red-glow), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn-cta:hover {
+      background-color: var(--red-cta-hover);
+      box-shadow: 0 8px 24px var(--red-glow);
+      transform: translateY(-2px);
+    }
+
+    .btn-cta:active {
+      transform: translateY(0);
+    }
+
+    /* Seções base enxutas */
+    .section {
+      padding: 2rem 0;
+      border-bottom: 1px solid rgba(229, 195, 101, 0.12);
+    }
+
+    /* --------------------------------------------------
+       DOBRA 1: PROMESSA
+       -------------------------------------------------- */
+    .hero-section {
+      padding-top: 1.75rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    .hero-lead {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin: 0.85rem auto 0.65rem;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .hero-media-wrap {
+      width: 100%;
+      max-width: 380px;
+      margin: 1rem auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-media-wrap picture,
+    .hero-media-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-media-wrap img {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 1.25rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      line-height: 1.35;
+      color: var(--text-light);
+      background: rgba(12, 43, 28, 0.6);
+      padding: 0.6rem 0.8rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(229, 195, 101, 0.2);
+    }
+
+    .bullet-icon {
+      color: var(--gold-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .hero-microcopy {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.65rem;
+      text-align: center;
+    }
+
+    /* --------------------------------------------------
+       DOBRA 2: O QUE VOCE VAI ENCONTRAR (CARROSSEIS)
+       -------------------------------------------------- */
+    .lead-short {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    .carousels-container {
+      margin-top: 1.25rem;
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .carousel-track-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 12px;
+      width: max-content;
+    }
+
+    .carousel-track.to-right {
+      animation: scrollRight 16s linear infinite;
+      will-change: transform;
+    }
+
+    .carousel-track.to-left {
+      animation: scrollLeft 16s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes scrollRight {
+      0% {
+        transform: translate3d(-50%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(0%, 0, 0);
+      }
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translate3d(0%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+
+    .a4-card {
+      height: 210px;
+      width: auto;
+      flex-shrink: 0;
+      background: var(--bg-card);
+      border: 1.5px solid var(--gold-border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .a4-card picture,
+    .a4-card img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+
+    .a4-card img {
+      object-fit: contain;
+    }
+
+    /* --------------------------------------------------
+       GRIDS 2x3 COMPACTOS (DOBRAS 3 & 5)
+       -------------------------------------------------- */
+    .compact-grid-2x3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.55rem;
+      margin-top: 1rem;
+    }
+
+    .compact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .compact-card-emoji {
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .compact-card-title {
+      font-family: var(--font-serif);
+      font-size: 0.925rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+
+    .compact-card-line {
+      font-size: 0.775rem;
+      color: var(--text-light);
+      line-height: 1.3;
+    }
+
+    /* Cards com metade da altura (Dobra 5) */
+    .compact-card-half {
+      padding: 0.45rem 0.4rem;
+      min-height: 78px;
+    }
+
+    .compact-card-half .compact-card-emoji {
+      font-size: 1.3rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .compact-card-half .compact-card-title {
+      font-size: 0.875rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .compact-card-half .compact-card-line {
+      font-size: 0.75rem;
+      line-height: 1.25;
+    }
+
+    /* --------------------------------------------------
+       DOBRA 4: TUDO O QUE VOCE VAI RECEBER
+       -------------------------------------------------- */
+    .badge-pill {
+      display: inline-block;
+      padding: 0.3rem 0.85rem;
+      background: var(--gold-primary);
+      color: var(--bg-dark);
+      font-family: var(--font-sans);
+      font-size: 0.725rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      border-radius: 50px;
+      margin-bottom: 0.75rem;
+    }
+
+    .square-media {
+      width: 100%;
+      max-width: 440px;
+      margin: 1rem auto;
+      aspect-ratio: 1 / 1;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 2px solid var(--gold-border-solid);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      background: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .square-media picture,
+    .square-media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .square-media img {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+
+    /* --------------------------------------------------
+       DOBRA 6: OFERTA (CARD UNICO)
+       -------------------------------------------------- */
+    .offer-box {
+      background: linear-gradient(180deg, #0e3522 0%, #082115 100%);
+      border: 2px solid var(--gold-border-solid);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.15rem;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(229, 195, 101, 0.15);
+      text-align: center;
+      margin-top: 1.25rem;
+    }
+
+    .offer-product-name {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--gold-light);
+      margin-bottom: 0.2rem;
+    }
+
+    .offer-product-subtitle {
+      font-size: 0.825rem;
+      color: var(--gold-primary);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .offer-product-desc {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    .offer-card-media {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto 1.25rem;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1.5px solid var(--gold-border-solid);
+      background: var(--bg-card-alt);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .offer-card-media picture,
+    .offer-card-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .offer-card-media img {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+
+    .offer-checklist {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.25rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .offer-checklist li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.875rem;
+      line-height: 1.35;
+      color: var(--text-light);
+    }
+
+    .offer-checklist .check-icon {
+      color: var(--gold-primary);
+      font-weight: 700;
+      font-size: 1.05rem;
+      flex-shrink: 0;
+    }
+
+    .offer-price-tag {
+      background: rgba(6, 25, 16, 0.85);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .price-kicker {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .price-highlight {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1;
+      text-shadow: 0 2px 10px rgba(229, 195, 101, 0.3);
+    }
+
+    .offer-closing-text {
+      font-size: 0.775rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+      line-height: 1.4;
+    }
+
+    /* --------------------------------------------------
+       DOBRA 7: GARANTIA
+       -------------------------------------------------- */
+    .guarantee-box {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1rem;
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+
+    .guarantee-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+      color: var(--bg-dark);
+      font-family: var(--font-serif);
+      font-weight: 800;
+      font-size: 1.05rem;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 4px 15px rgba(229, 195, 101, 0.3);
+    }
+
+    .guarantee-text {
+      font-size: 0.925rem;
+      line-height: 1.45;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    /* --------------------------------------------------
+       DOBRA 8: FAQ (ACORDEAO)
+       -------------------------------------------------- */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-top: 1.25rem;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .faq-summary {
+      padding: 0.85rem 1rem;
+      font-size: 0.925rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      user-select: none;
+      list-style: none;
+    }
+
+    .faq-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-arrow {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item[open] .faq-arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-content {
+      padding: 0 1rem 0.85rem;
+      border-top: 1px solid rgba(229, 195, 101, 0.15);
+      padding-top: 0.65rem;
+    }
+
+    .faq-content p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* --------------------------------------------------
+       DOBRA 9: RODAPE
+       -------------------------------------------------- */
+    .site-footer {
+      padding: 2rem 0 3rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      line-height: 1.55;
+      border-top: 1px solid rgba(229, 195, 101, 0.15);
+    }
+
+    .site-footer p {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    /* --------------------------------------------------
+       POPUP REFORMULADO: ANCORAGEM REAL & CABE EM 390x800
+       Sem rolagem ou rolagem minima | Fontes >= 14px
+       -------------------------------------------------- */
+    .popup-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(2, 10, 6, 0.85);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      overflow-y: auto;
+    }
+
+    .popup-backdrop.active {
+      display: flex;
+    }
+
+    .popup-container {
+      width: 100%;
+      max-width: 420px;
+      background: #092316;
+      border: 2px solid var(--gold-border-solid);
+      border-radius: var(--radius-md);
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.9), 0 0 25px rgba(229, 195, 101, 0.2);
+      padding: 1rem 0.9rem 0.85rem;
+      position: relative;
+      margin: auto;
+      max-height: 94vh;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    .popup-close-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--gold-border);
+      color: var(--gold-light);
+      border-radius: 50%;
+      font-size: 1.05rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      transition: background 0.15s ease;
+      z-index: 3;
+    }
+
+    .popup-close-btn:hover {
+      background: var(--red-cta);
+      color: #FFF;
+    }
+
+    .popup-header-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 0.25rem;
+      padding: 0 24px;
+    }
+
+    .popup-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.3;
+      margin-bottom: 0.65rem;
+    }
+
+    /* Grid 2x2 para os 4 produtos do popup de upgrade */
+    .popup-products-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.45rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .popup-prod-card {
+      background: rgba(12, 43, 28, 0.65);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-sm);
+      padding: 0.45rem 0.35rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .popup-prod-card.is-main {
+      border: 1.5px solid var(--gold-border-solid);
+      background: rgba(229, 195, 101, 0.12);
+    }
+
+    .popup-prod-badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 5px;
+      border-radius: 4px;
+      margin-bottom: 0.35rem;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .popup-prod-badge.badge-main {
+      background: var(--gold-primary);
+      color: #061910;
+    }
+
+    .popup-prod-badge.badge-comp {
+      background: rgba(229, 195, 101, 0.22);
+      color: var(--gold-light);
+      border: 1px solid rgba(229, 195, 101, 0.35);
+    }
+
+    .popup-prod-media {
+      width: 100%;
+      max-width: 95px;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.3rem;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+
+    .popup-prod-media picture,
+    .popup-prod-media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .popup-prod-media img {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+
+    .popup-prod-name {
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-light);
+    }
+
+    /* Comparativo lado a lado */
+    .popup-comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .popup-comp-card {
+      border-radius: var(--radius-sm);
+      padding: 0.45rem 0.35rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .popup-comp-basic {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #9AA79F;
+    }
+
+    .popup-comp-premium {
+      background: rgba(229, 195, 101, 0.12);
+      border: 1.5px solid var(--gold-border-solid);
+      position: relative;
+    }
+
+    .popup-badge-chosen {
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold-primary);
+      color: #061910;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 7px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    .comp-name {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .popup-comp-basic .comp-name {
+      color: #A6B4AC;
+    }
+
+    .popup-comp-premium .comp-name {
+      color: var(--gold-light);
+      margin-top: 2px;
+    }
+
+    .comp-count {
+      font-size: 14px;
+      margin: 1px 0;
+    }
+
+    .popup-comp-basic .comp-count {
+      color: #8C9991;
+    }
+
+    .popup-comp-premium .comp-count {
+      color: var(--gold-primary);
+    }
+
+    .comp-price {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .popup-comp-basic .comp-price {
+      color: #CBD5CE;
+    }
+
+    .popup-comp-premium .comp-price {
+      color: #FFFFFF;
+      font-size: 16px;
+      text-shadow: 0 1px 6px rgba(229, 195, 101, 0.35);
+    }
+
+    /* Faixa de diferenca */
+    .popup-diff-banner {
+      background: rgba(229, 195, 101, 0.15);
+      border: 1px dashed var(--gold-border);
+      border-radius: 6px;
+      padding: 0.3rem 0.5rem;
+      text-align: center;
+      font-size: 14px;
+      color: var(--gold-light);
+      font-weight: 600;
+      line-height: 1.25;
+      margin-bottom: 0.55rem;
+    }
+
+    /* Linha inclusao previa */
+    .popup-included-note {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.3;
+      margin-bottom: 0.45rem;
+      font-style: italic;
+    }
+
+    /* Titulo da lista */
+    .popup-extra-heading {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gold-primary);
+      margin-bottom: 0.35rem;
+      text-align: left;
+    }
+
+    /* Lista compacta de 6 itens */
+    .popup-extra-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-bottom: 0.75rem;
+      text-align: left;
+    }
+
+    .popup-extra-item {
+      font-size: 14px;
+      line-height: 1.3;
+      color: var(--text-light);
+      display: flex;
+      align-items: baseline;
+      gap: 0.45rem;
+    }
+
+    .popup-extra-icon {
+      font-size: 14px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .popup-extra-text {
+      flex: 1;
+    }
+
+    .popup-extra-text strong {
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+    /* Botao Principal Pulsante */
+    @keyframes pulseCta {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(229, 195, 101, 0.7), 0 4px 16px rgba(185, 28, 28, 0.5);
+      }
+
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 8px rgba(229, 195, 101, 0), 0 6px 22px rgba(185, 28, 28, 0.7);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(229, 195, 101, 0), 0 4px 16px rgba(185, 28, 28, 0.5);
+      }
+    }
+
+    .btn-popup-pulse {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 48px;
+      padding: 0.75rem 0.85rem;
+      background: var(--red-cta);
+      color: #FFFFFF;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid var(--gold-border-solid);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-align: center;
+      line-height: 1.25;
+      animation: pulseCta 2s infinite;
+      transition: background 0.15s ease;
+    }
+
+    .btn-popup-pulse:hover {
+      background: var(--red-cta-hover);
+      animation: none;
+    }
+
+    .link-popup-basic {
+      display: block;
+      width: 100%;
+      padding: 0.4rem 0.5rem 0.15rem;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: underline;
+      text-align: center;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .link-popup-basic:hover {
+      color: var(--gold-light);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- ==================================================
+         DOBRA 1: PROMESSA
+         ================================================== -->
+    <header class="section hero-section">
+      <span class="kicker">CONFEITARIA DE NATAL</span>
+      <h1>Seu Doce de Natal com Cara de Confeitaria de Grife</h1>
+      <div class="gold-divider"></div>
+
+      <!-- Midia 1:1 Proporcao Original -->
+      <div class="hero-media-wrap">
+        <picture>
+          <source srcset="assets/hero-confeitaria-luxo.webp" type="image/webp">
+          <img src="https://i.ibb.co/bjGQRnRw/Kit-de-Confeitaria-de-Luxo-Natalino-1.png"
+            alt="Kit de Confeitaria de Luxo Natalino" width="800" height="800"
+            fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+
+      <p class="hero-lead">
+        Embalagens premium para imprimir e valorizar suas encomendas neste Natal.
+      </p>
+
+      <!-- Bullets curtos -->
+      <ul class="hero-bullets">
+        <li>
+          <span class="bullet-icon">✓</span>
+          <span>Artes de embalagens natalinas para imprimir</span>
+        </li>
+        <li>
+          <span class="bullet-icon">✓</span>
+          <span>Tags e cards de preço com visual elegante</span>
+        </li>
+      </ul>
+
+      <!-- Botao ancora ate id="oferta" -->
+      <a href="#oferta" class="btn-cta">QUERO MEU KIT DE NATAL</a>
+      <div class="hero-microcopy">Acesso imediato em PDF. Pronto para imprimir.</div>
+    </header>
+
+    <!-- ==================================================
+         DOBRA 2: O QUE VOCE VAI ENCONTRAR (CARROSSEIS)
+         ================================================== -->
+    <section class="section">
+      <h2>O Que Você Vai Encontrar</h2>
+      <div class="gold-divider"></div>
+      <p class="lead-short">
+        Artes digitais prontas para imprimir e encantar no primeiro olhar.
+      </p>
+
+      <!-- Carrosseis animados continuos (deslizando continuamente para direita e esquerda) -->
+      <div class="carousels-container">
+        <!-- Carrossel 1 para a direita -->
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track to-right">
+            <!-- Bloco 1 (6 cards) -->
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-01.webp" type="image/webp">
+                <img src="https://i.ibb.co/hxb69KMH/3bcd4d601c14b722f100c75980948711-pdf.png"
+                  alt="Selos redondos de pote para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-04.webp" type="image/webp">
+                <img src="https://i.ibb.co/HD3Wb2VP/2463b54a64e0dab1ffd306904c079b32-pdf.png"
+                  alt="Rótulos em arco Feito com carinho para potes e saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-05.webp" type="image/webp">
+                <img src="https://i.ibb.co/ycYbcycW/fff92db05a4df31f3e3707f2fa8c8a9a-pdf.png"
+                  alt="Bandeirolas de palito Boas Festas para panetone" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-01.webp" type="image/webp">
+                <img src="https://i.ibb.co/hxb69KMH/3bcd4d601c14b722f100c75980948711-pdf.png"
+                  alt="Selos redondos de pote para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-04.webp" type="image/webp">
+                <img src="https://i.ibb.co/HD3Wb2VP/2463b54a64e0dab1ffd306904c079b32-pdf.png"
+                  alt="Rótulos em arco Feito com carinho para potes e saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-05.webp" type="image/webp">
+                <img src="https://i.ibb.co/ycYbcycW/fff92db05a4df31f3e3707f2fa8c8a9a-pdf.png"
+                  alt="Bandeirolas de palito Boas Festas para panetone" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+
+            <!-- Bloco 2 clone exato para loop continuo a 50% -->
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-01.webp" type="image/webp">
+                <img src="https://i.ibb.co/hxb69KMH/3bcd4d601c14b722f100c75980948711-pdf.png"
+                  alt="Selos redondos de pote para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-04.webp" type="image/webp">
+                <img src="https://i.ibb.co/HD3Wb2VP/2463b54a64e0dab1ffd306904c079b32-pdf.png"
+                  alt="Rótulos em arco Feito com carinho para potes e saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-05.webp" type="image/webp">
+                <img src="https://i.ibb.co/ycYbcycW/fff92db05a4df31f3e3707f2fa8c8a9a-pdf.png"
+                  alt="Bandeirolas de palito Boas Festas para panetone" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-01.webp" type="image/webp">
+                <img src="https://i.ibb.co/hxb69KMH/3bcd4d601c14b722f100c75980948711-pdf.png"
+                  alt="Selos redondos de pote para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-04.webp" type="image/webp">
+                <img src="https://i.ibb.co/HD3Wb2VP/2463b54a64e0dab1ffd306904c079b32-pdf.png"
+                  alt="Rótulos em arco Feito com carinho para potes e saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-05.webp" type="image/webp">
+                <img src="https://i.ibb.co/ycYbcycW/fff92db05a4df31f3e3707f2fa8c8a9a-pdf.png"
+                  alt="Bandeirolas de palito Boas Festas para panetone" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrossel 2 para a esquerda -->
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track to-left">
+            <!-- Bloco 1 (6 cards) -->
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-02.webp" type="image/webp">
+                <img src="https://i.ibb.co/ksnHT7jp/10-Templates-de-Vitrine-Instagram-pdf-1.png"
+                  alt="Templates de Vitrine para Instagram Stories" width="540" height="960" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-06.webp" type="image/webp">
+                <img src="https://i.ibb.co/wtWR1kZ/3bcd4d601c14b722f100c75980948711-pdf-1.png"
+                  alt="Selos guirlanda Feliz Natal para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-03.webp" type="image/webp">
+                <img src="https://i.ibb.co/3YkqgQtR/2463b54a64e0dab1ffd306904c079b32-pdf-1.png"
+                  alt="Topper dobrável Boas Festas para saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-02.webp" type="image/webp">
+                <img src="https://i.ibb.co/ksnHT7jp/10-Templates-de-Vitrine-Instagram-pdf-1.png"
+                  alt="Templates de Vitrine para Instagram Stories" width="540" height="960" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-06.webp" type="image/webp">
+                <img src="https://i.ibb.co/wtWR1kZ/3bcd4d601c14b722f100c75980948711-pdf-1.png"
+                  alt="Selos guirlanda Feliz Natal para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-03.webp" type="image/webp">
+                <img src="https://i.ibb.co/3YkqgQtR/2463b54a64e0dab1ffd306904c079b32-pdf-1.png"
+                  alt="Topper dobrável Boas Festas para saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+
+            <!-- Bloco 2 clone exato para loop continuo a 50% -->
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-02.webp" type="image/webp">
+                <img src="https://i.ibb.co/ksnHT7jp/10-Templates-de-Vitrine-Instagram-pdf-1.png"
+                  alt="Templates de Vitrine para Instagram Stories" width="540" height="960" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-06.webp" type="image/webp">
+                <img src="https://i.ibb.co/wtWR1kZ/3bcd4d601c14b722f100c75980948711-pdf-1.png"
+                  alt="Selos guirlanda Feliz Natal para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-03.webp" type="image/webp">
+                <img src="https://i.ibb.co/3YkqgQtR/2463b54a64e0dab1ffd306904c079b32-pdf-1.png"
+                  alt="Topper dobrável Boas Festas para saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-02.webp" type="image/webp">
+                <img src="https://i.ibb.co/ksnHT7jp/10-Templates-de-Vitrine-Instagram-pdf-1.png"
+                  alt="Templates de Vitrine para Instagram Stories" width="540" height="960" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-06.webp" type="image/webp">
+                <img src="https://i.ibb.co/wtWR1kZ/3bcd4d601c14b722f100c75980948711-pdf-1.png"
+                  alt="Selos guirlanda Feliz Natal para imprimir" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="a4-card">
+              <picture>
+                <source srcset="assets/carrossel-03.webp" type="image/webp">
+                <img src="https://i.ibb.co/3YkqgQtR/2463b54a64e0dab1ffd306904c079b32-pdf-1.png"
+                  alt="Topper dobrável Boas Festas para saquinhos" width="600" height="848" loading="lazy" decoding="async">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 3: POR QUE E VALIOSO (GRID 2x3 COMPACTO)
+         ================================================== -->
+    <section class="section">
+      <h2>Por Que É Valioso</h2>
+      <div class="gold-divider"></div>
+
+      <div class="compact-grid-2x3">
+        <div class="compact-card">
+          <span class="compact-card-emoji">🌟</span>
+          <div class="compact-card-title">Primeira Impressão</div>
+          <div class="compact-card-line">Cliente nota o capricho antes.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">🏷️</span>
+          <div class="compact-card-title">Visual de Grife</div>
+          <div class="compact-card-line">Embalagem elegante que valoriza doces.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">📐</span>
+          <div class="compact-card-title">Padrão Coordenado</div>
+          <div class="compact-card-line">Peças que combinam entre si.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">💎</span>
+          <div class="compact-card-title">Mais Valor</div>
+          <div class="compact-card-line">Doces vistos como presentes refinados.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">🖨️</span>
+          <div class="compact-card-title">Fácil Impressão</div>
+          <div class="compact-card-line">Arquivos prontos em folha A4.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">✨</span>
+          <div class="compact-card-title">Imagem Profissional</div>
+          <div class="compact-card-line">Diga adeus ao visual improvisado.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 4: TUDO O QUE VOCE VAI RECEBER
+         ================================================== -->
+    <section class="section" style="text-align: center;">
+      <span class="badge-pill">ACESSO IMEDIATO</span>
+      <h2>Tudo o Que Você Vai Receber</h2>
+      <div class="gold-divider"></div>
+
+      <!-- Imagem quadrada 1:1 Proporcao Original -->
+      <div class="square-media">
+        <picture>
+          <source srcset="assets/receber-tudo.webp" type="image/webp">
+          <img src="https://i.ibb.co/gLgdCfJq/Kit-Confeitaria-de-Luxo-no-Natal.png"
+            alt="Tudo o que você vai receber no Kit Confeitaria de Luxo no Natal" width="800" height="800"
+            loading="lazy" decoding="async">
+        </picture>
+      </div>
+
+      <!-- Grid 6 temas cobertos -->
+      <div class="compact-grid-2x3" style="margin-bottom: 1.25rem;">
+        <div class="compact-card">
+          <span class="compact-card-emoji">📦</span>
+          <div class="compact-card-title">Cintas de Caixa</div>
+          <div class="compact-card-line">Modelos verticais e de tampa.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">🏷️</span>
+          <div class="compact-card-title">Tags Chanfradas</div>
+          <div class="compact-card-line">Campos Para e De natalinos.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">🔖</span>
+          <div class="compact-card-title">Cards de Preço</div>
+          <div class="compact-card-line">Exibição elegante dos seus valores.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">🎀</span>
+          <div class="compact-card-title">Faixas Decorativas</div>
+          <div class="compact-card-line">Padrões refinados com tons dourados.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">🌟</span>
+          <div class="compact-card-title">Selos Redondos</div>
+          <div class="compact-card-line">Frases de Boas Festas e carinho.</div>
+        </div>
+
+        <div class="compact-card">
+          <span class="compact-card-emoji">📜</span>
+          <div class="compact-card-title">Rótulos Retangulares</div>
+          <div class="compact-card-line">Modelos especiais para potes e sacolas.</div>
+        </div>
+      </div>
+
+      <!-- Botao ancora -->
+      <a href="#oferta" class="btn-cta">QUERO ACESSAR O CONTEÚDO</a>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 5: IDEAL PARA VOCE QUE DESEJA (GRID 2x3 COMPACTO MEIA ALTURA)
+         ================================================== -->
+    <section class="section">
+      <h2>Ideal Para Você Que Deseja</h2>
+      <div class="gold-divider"></div>
+
+      <div class="compact-grid-2x3">
+        <div class="compact-card compact-card-half">
+          <span class="compact-card-emoji">🎁</span>
+          <div class="compact-card-title">Vender Mais</div>
+          <div class="compact-card-line">Apresentação refinada para o Natal.</div>
+        </div>
+
+        <div class="compact-card compact-card-half">
+          <span class="compact-card-emoji">📱</span>
+          <div class="compact-card-title">Passar Confiança</div>
+          <div class="compact-card-line">Fotos que transmitem cuidado real.</div>
+        </div>
+
+        <div class="compact-card compact-card-half">
+          <span class="compact-card-emoji">👑</span>
+          <div class="compact-card-title">Ser Referência</div>
+          <div class="compact-card-line">Destaque e fuja do comum.</div>
+        </div>
+
+        <div class="compact-card compact-card-half">
+          <span class="compact-card-emoji">🎀</span>
+          <div class="compact-card-title">Encantar Clientes</div>
+          <div class="compact-card-line">Experiência marcante na entrega final.</div>
+        </div>
+
+        <div class="compact-card compact-card-half">
+          <span class="compact-card-emoji">🎯</span>
+          <div class="compact-card-title">Foco Visual</div>
+          <div class="compact-card-line">Embalagem perfeita para sua receita.</div>
+        </div>
+
+        <div class="compact-card compact-card-half">
+          <span class="compact-card-emoji">💖</span>
+          <div class="compact-card-title">Cobrar Justo</div>
+          <div class="compact-card-line">Valorize seu trabalho de confeitaria.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 6: OFERTA (UNICA OFERTA VISIVEL: PRODUTO PRINCIPAL)
+         ================================================== -->
+    <section class="section" id="oferta">
+      <h2>Oferta Exclusiva de Natal</h2>
+      <p class="lead-short" style="margin-bottom: 0.5rem;">
+        Apresente seus doces com o visual que eles merecem.
+      </p>
+      <div class="gold-divider"></div>
+
+      <!-- 1 Card do Produto Principal (R$ 11,99) -->
+      <div class="offer-box">
+        <div class="offer-product-name">Kit Confeitaria de Luxo no Natal</div>
+        <div class="offer-product-subtitle">Coleção Digital de Artes para Imprimir</div>
+        <p class="offer-product-desc">
+          Artes de embalagem, tags e cards de preço em PDF para imprimir e encantar.
+        </p>
+
+        <div class="offer-card-media">
+          <picture>
+            <source srcset="assets/oferta-produto.webp" type="image/webp">
+            <img src="https://i.ibb.co/bjGQRnRw/Kit-de-Confeitaria-de-Luxo-Natalino-1.png"
+              alt="Kit de Confeitaria de Luxo Natalino" width="800" height="800"
+              loading="lazy" decoding="async">
+          </picture>
+        </div>
+
+        <ul class="offer-checklist">
+          <li>
+            <span class="check-icon">✓</span>
+            <span>Coleção de embalagens premium para imprimir</span>
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            <span>Tags e cards de preço com acabamento refinado</span>
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            <span>Arquivos digitais em PDF prontos para folha A4</span>
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            <span>Acesso imediato no celular e computador</span>
+          </li>
+        </ul>
+
+        <div class="offer-price-tag">
+          <span class="price-kicker">Pagamento único</span>
+          <div class="price-highlight">R$ 11,99</div>
+        </div>
+
+        <!-- SÓ este botao abre o POPUP -->
+        <button type="button" class="btn-cta" id="open-offer-popup">QUERO ACESSAR AGORA</button>
+
+        <div class="offer-closing-text">
+          Produto 100% digital em PDF. Imprima quando quiser.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 7: GARANTIA
+         ================================================== -->
+    <section class="section">
+      <div class="guarantee-box">
+        <div class="guarantee-badge">7<br><span style="font-size: 0.65rem; text-transform: uppercase;">Dias</span></div>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--gold-light);">Garantia Incondicional</h3>
+        <p class="guarantee-text">
+          Você pode pedir reembolso em até 7 dias a partir da compra, pelo art. 49 do CDC.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 8: FAQ (7 PERGUNTAS)
+         ================================================== -->
+    <section class="section">
+      <h2>Perguntas Frequentes</h2>
+      <div class="gold-divider"></div>
+
+      <div class="faq-list">
+        <!-- Pergunta 1 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>É curso?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Não. É um kit digital com arquivos em PDF para imprimir.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 2 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Tem receitas?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Não. O foco é apresentação e artes de embalagem para imprimir.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 3 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Vem embalagem física?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Não. O kit traz artes digitais para você imprimir.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 4 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Os materiais de impressão estão inclusos?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Não. Papel, tinta e demais materiais ficam por sua conta.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 5 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Como acesso e uso os arquivos?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Você pode acessar e visualizar os arquivos em PDF pelo celular, tablet ou computador, prontos para enviar
+              para impressão.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 6 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Como recebo o acesso?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Após a confirmação do pagamento, a Lowify envia o acesso para o seu e-mail.</p>
+          </div>
+        </details>
+
+        <!-- Pergunta 7 (Reembolso, aberta por padrao) -->
+        <details class="faq-item" open>
+          <summary class="faq-summary">
+            <span>Qual é a política de reembolso?</span>
+            <span class="faq-arrow">▼</span>
+          </summary>
+          <div class="faq-content">
+            <p>Você pode pedir reembolso em até 7 dias a partir da compra, pelo art. 49 do CDC.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         DOBRA 9: RODAPE
+         ================================================== -->
+    <footer class="site-footer">
+      <p>© 2026 Kit Confeitaria de Luxo no Natal. Todos os direitos reservados.</p>
+      <p>Este site não possui vínculo ou afiliação oficial com Facebook, Instagram ou Google.</p>
+      <p>A licença permite utilizar os materiais para apresentar e divulgar seus próprios doces. É estritamente proibida
+        a reprodução, revenda ou distribuição não autorizada dos arquivos.</p>
+    </footer>
+
+  </div> <!-- Fim .page-wrapper -->
+
+
+  <!-- ==================================================
+       POPUP DE UPGRADE COM PRODUTOS E IMAGENS 1:1
+       ================================================== -->
+  <div class="popup-backdrop" id="premium-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="popup-container">
+      <button type="button" class="popup-close-btn" id="close-offer-popup" aria-label="Fechar janela">✕</button>
+
+      <div class="popup-header-title" id="popup-title">ESPERE! POR SÓ R$ 8 A MAIS LEVE O PACOTE COMPLETO</div>
+      <div class="popup-subtitle">Você leva o produto principal + 3 produtos complementares exclusivos:</div>
+
+      <!-- Grid dos 4 Produtos com Imagens 1:1 Proporcionais -->
+      <div class="popup-products-grid">
+        <!-- Produto Principal -->
+        <div class="popup-prod-card is-main">
+          <span class="popup-prod-badge badge-main">PRODUTO PRINCIPAL</span>
+          <div class="popup-prod-media">
+            <picture>
+              <source srcset="assets/popup-prod-principal.webp" type="image/webp">
+              <img src="https://i.ibb.co/1fmTBKPh/Kit-de-Confeitaria-Natalina-de-Luxo-2.png"
+                alt="Kit de Confeitaria Natalina de Luxo" width="500" height="500" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="popup-prod-name">Kit Confeitaria Natalina</div>
+        </div>
+
+        <!-- Complementar 01 -->
+        <div class="popup-prod-card">
+          <span class="popup-prod-badge badge-comp">+ COMPLEMENTAR 01</span>
+          <div class="popup-prod-media">
+            <picture>
+              <source srcset="assets/popup-prod-comp1.webp" type="image/webp">
+              <img src="https://i.ibb.co/Zt4j6Yq/Caixa-Premium-de-Doces-Natalinos-4.png"
+                alt="Guia de Medidas Premium" width="500" height="500" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="popup-prod-name">Guia de Medidas Premium</div>
+        </div>
+
+        <!-- Complementar 02 -->
+        <div class="popup-prod-card">
+          <span class="popup-prod-badge badge-comp">+ COMPLEMENTAR 02</span>
+          <div class="popup-prod-media">
+            <picture>
+              <source srcset="assets/popup-prod-comp2.webp" type="image/webp">
+              <img src="https://i.ibb.co/zH4hcj91/Caixa-Natalina-de-Doces-Gourmet-3.png"
+                alt="Guia de Impressão e Acabamento de Grife" width="500" height="500" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="popup-prod-name">Guia de Impressão de Grife</div>
+        </div>
+
+        <!-- Complementar 03 -->
+        <div class="popup-prod-card">
+          <span class="popup-prod-badge badge-comp">+ COMPLEMENTAR 03</span>
+          <div class="popup-prod-media">
+            <picture>
+              <source srcset="assets/popup-prod-comp3.webp" type="image/webp">
+              <img src="https://i.ibb.co/351fwh70/Etiquetas-Natalinas-Elegantes-5.png"
+                alt="Etiquetas Natalinas Elegantes" width="500" height="500" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="popup-prod-name">Etiquetas Elegantes</div>
+        </div>
+      </div>
+
+      <!-- Bloco comparativo lado a lado -->
+      <div class="popup-comparison-grid">
+        <div class="popup-comp-card popup-comp-basic">
+          <span class="comp-name">SÓ O KIT</span>
+          <span class="comp-count">1 produto</span>
+          <span class="comp-price">R$ 11,99</span>
+        </div>
+
+        <div class="popup-comp-card popup-comp-premium">
+          <span class="popup-badge-chosen">MAIS ESCOLHIDO</span>
+          <span class="comp-name">PACOTE COMPLETO</span>
+          <span class="comp-count">4 coleções</span>
+          <span class="comp-price">R$ 19,99</span>
+        </div>
+      </div>
+
+      <!-- Faixa da diferenca -->
+      <div class="popup-diff-banner">
+        Diferença de apenas R$ 8,00 no total (R$ 2,00 por produto adicional!)
+      </div>
+
+      <!-- Botao CTA pulsante e Link Secundario -->
+      <div style="display: flex; flex-direction: column; gap: 0.35rem; align-items: center;">
+        <a href="https://pay.lowify.com.br/checkout?product_id=b7l4Ff" class="btn-popup-pulse"
+          id="btn-checkout-premium">
+          SIM! QUERO O PACOTE COMPLETO POR R$ 19,99
+        </a>
+        <a href="https://pay.lowify.com.br/checkout?product_id=gE5zga" class="link-popup-basic" id="btn-checkout-basic">
+          Não, quero só o kit por R$ 11,99
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================================================
+       SCRIPTS: CONTROLE DO POPUP & REPASSE DE UTMS
+       ================================================== -->
+  <script>
+    (function () {
+      // 1. Controle do Popup
+      const popup = document.getElementById('premium-popup-overlay');
+      const openBtn = document.getElementById('open-offer-popup');
+      const closeBtn = document.getElementById('close-offer-popup');
+
+      function openPopup() {
+        if (!popup) return;
+        popup.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closePopup() {
+        if (!popup) return;
+        popup.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn) {
+        openBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          openPopup();
+        });
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closePopup);
+      }
+
+      if (popup) {
+        popup.addEventListener('click', function (e) {
+          if (e.target === popup) {
+            closePopup();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && popup && popup.classList.contains('active')) {
+          closePopup();
+        }
+      });
+
+      // 2. Repasse deterministico de UTMs para os links de checkout da Lowify
+      try {
+        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+        const currentParams = new URLSearchParams(window.location.search);
+        const hasUtms = utmKeys.some(function (k) { return currentParams.has(k); });
+
+        if (hasUtms) {
+          const checkoutLinks = document.querySelectorAll('a[href*="pay.lowify.com.br/checkout"]');
+          checkoutLinks.forEach(function (link) {
+            try {
+              const url = new URL(link.href, window.location.origin);
+              utmKeys.forEach(function (key) {
+                const val = currentParams.get(key);
+                if (val !== null && val !== '') {
+                  url.searchParams.set(key, val);
+                }
+              });
+              link.href = url.toString();
+            } catch (err) { }
+          });
+        }
+      } catch (e) { }
+    })();
+  </script>
+</body>
+
+</html>

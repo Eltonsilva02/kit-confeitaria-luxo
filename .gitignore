@@ -1,0 +1,10 @@
+# Screenshots locais de testes
+test-*.png
+screenshot-*.png
+*-viewport.png
+*-fullpage.png
+sec-*.png
+new-*.png
+test-summary.json
+.system_generated/
+*.log

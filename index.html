@@ -709,8 +709,8 @@
     }
 
     /* --------------------------------------------------
-       POPUP REFORMULADO: ANCORAGEM REAL & CABE EM 390x800
-       Sem rolagem ou rolagem minima | Fontes >= 14px
+       POPUP REFORMULADO: 100% RESPONSIVO MOBILE FIRST
+       Garante que todos os elementos e o botao basico caibam perfeitamente
        -------------------------------------------------- */
     .popup-backdrop {
       display: none;
@@ -718,15 +718,19 @@
       top: 0;
       left: 0;
       width: 100vw;
+      width: 100%;
       height: 100vh;
-      background: rgba(2, 10, 6, 0.85);
+      height: 100dvh;
+      background: rgba(2, 10, 6, 0.88);
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
       z-index: 9999;
       align-items: center;
       justify-content: center;
-      padding: 12px;
+      padding: 8px;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
     }
 
     .popup-backdrop.active {
@@ -735,30 +739,42 @@
 
     .popup-container {
       width: 100%;
-      max-width: 420px;
+      max-width: 410px;
       background: #092316;
       border: 2px solid var(--gold-border-solid);
       border-radius: var(--radius-md);
       box-shadow: 0 16px 50px rgba(0, 0, 0, 0.9), 0 0 25px rgba(229, 195, 101, 0.2);
-      padding: 1rem 0.9rem 0.85rem;
+      padding: 0.8rem 0.75rem 0.75rem;
       position: relative;
       margin: auto;
       max-height: 94vh;
+      max-height: 94dvh;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       box-sizing: border-box;
+    }
+
+    /* Scrollbar sutil e elegante */
+    .popup-container::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .popup-container::-webkit-scrollbar-thumb {
+      background: rgba(229, 195, 101, 0.3);
+      border-radius: 4px;
     }
 
     .popup-close-btn {
       position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 30px;
-      height: 30px;
-      background: rgba(0, 0, 0, 0.5);
+      top: 6px;
+      right: 6px;
+      width: 28px;
+      height: 28px;
+      background: rgba(0, 0, 0, 0.55);
       border: 1px solid var(--gold-border);
       color: var(--gold-light);
       border-radius: 50%;
-      font-size: 1.05rem;
+      font-size: 1rem;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -775,36 +791,36 @@
 
     .popup-header-title {
       font-family: var(--font-serif);
-      font-size: 1.05rem;
+      font-size: clamp(0.92rem, 3.8vw, 1.05rem);
       font-weight: 700;
       color: var(--gold-light);
       text-align: center;
-      line-height: 1.25;
-      margin-bottom: 0.25rem;
-      padding: 0 24px;
+      line-height: 1.22;
+      margin-bottom: 0.2rem;
+      padding: 0 28px 0 0;
     }
 
     .popup-subtitle {
-      font-size: 14px;
+      font-size: 12px;
       color: var(--text-muted);
       text-align: center;
-      line-height: 1.3;
-      margin-bottom: 0.65rem;
+      line-height: 1.25;
+      margin-bottom: 0.4rem;
     }
 
     /* Grid 2x2 para os 4 produtos do popup de upgrade */
     .popup-products-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.45rem;
-      margin-bottom: 0.65rem;
+      gap: 0.35rem;
+      margin-bottom: 0.4rem;
     }
 
     .popup-prod-card {
       background: rgba(12, 43, 28, 0.65);
       border: 1px solid var(--gold-border);
       border-radius: var(--radius-sm);
-      padding: 0.45rem 0.35rem;
+      padding: 0.3rem 0.25rem 0.25rem;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -820,13 +836,13 @@
 
     .popup-prod-badge {
       display: inline-block;
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      padding: 2px 5px;
-      border-radius: 4px;
-      margin-bottom: 0.35rem;
+      padding: 1px 4px;
+      border-radius: 3px;
+      margin-bottom: 0.2rem;
       line-height: 1.1;
       white-space: nowrap;
     }
@@ -844,14 +860,14 @@
 
     .popup-prod-media {
       width: 100%;
-      max-width: 95px;
+      max-width: 62px;
       aspect-ratio: 1 / 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 0.3rem;
+      margin: 0 auto 0.2rem;
       overflow: hidden;
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
     .popup-prod-media picture,
@@ -867,9 +883,9 @@
     }
 
     .popup-prod-name {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      line-height: 1.2;
+      line-height: 1.15;
       color: var(--text-light);
     }
 
@@ -877,13 +893,13 @@
     .popup-comparison-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-      margin-bottom: 0.45rem;
+      gap: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     .popup-comp-card {
       border-radius: var(--radius-sm);
-      padding: 0.45rem 0.35rem;
+      padding: 0.3rem 0.25rem;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -904,22 +920,22 @@
 
     .popup-badge-chosen {
       position: absolute;
-      top: -8px;
+      top: -7px;
       left: 50%;
       transform: translateX(-50%);
       background: var(--gold-primary);
       color: #061910;
-      font-size: 10px;
+      font-size: 8.5px;
       font-weight: 800;
-      padding: 1px 7px;
-      border-radius: 10px;
+      padding: 1px 6px;
+      border-radius: 8px;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       white-space: nowrap;
     }
 
     .comp-name {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
       line-height: 1.2;
@@ -931,11 +947,11 @@
 
     .popup-comp-premium .comp-name {
       color: var(--gold-light);
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
     .comp-count {
-      font-size: 14px;
+      font-size: 11px;
       margin: 1px 0;
     }
 
@@ -948,7 +964,7 @@
     }
 
     .comp-price {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 800;
       line-height: 1.2;
     }
@@ -959,7 +975,7 @@
 
     .popup-comp-premium .comp-price {
       color: #FFFFFF;
-      font-size: 16px;
+      font-size: 15px;
       text-shadow: 0 1px 6px rgba(229, 195, 101, 0.35);
     }
 
@@ -967,14 +983,14 @@
     .popup-diff-banner {
       background: rgba(229, 195, 101, 0.15);
       border: 1px dashed var(--gold-border);
-      border-radius: 6px;
-      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+      padding: 0.25rem 0.4rem;
       text-align: center;
-      font-size: 14px;
+      font-size: 11.5px;
       color: var(--gold-light);
       font-weight: 600;
       line-height: 1.25;
-      margin-bottom: 0.55rem;
+      margin-bottom: 0.4rem;
     }
 
     /* Linha inclusao previa */
@@ -1054,12 +1070,12 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      min-height: 48px;
-      padding: 0.75rem 0.85rem;
+      min-height: 44px;
+      padding: 0.6rem 0.75rem;
       background: var(--red-cta);
       color: #FFFFFF;
       font-family: var(--font-sans);
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 800;
       letter-spacing: 0.02em;
       text-transform: uppercase;
@@ -1068,9 +1084,11 @@
       border-radius: var(--radius-sm);
       cursor: pointer;
       text-align: center;
-      line-height: 1.25;
+      line-height: 1.22;
       animation: pulseCta 2s infinite;
+      box-shadow: 0 4px 14px rgba(185, 28, 28, 0.45);
       transition: background 0.15s ease;
+      box-sizing: border-box;
     }
 
     .btn-popup-pulse:hover {
@@ -1078,13 +1096,44 @@
       animation: none;
     }
 
+    /* Botao secundario com contraste real para a oferta basica */
+    .btn-popup-basic {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 38px;
+      padding: 0.45rem 0.75rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(229, 195, 101, 0.45);
+      border-radius: var(--radius-sm);
+      color: #E2ECE5;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.25;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+    }
+
+    .btn-popup-basic:hover {
+      background: rgba(229, 195, 101, 0.15);
+      border-color: var(--gold-primary);
+      color: #FFFFFF;
+    }
+
     .link-popup-basic {
       display: block;
       width: 100%;
-      padding: 0.4rem 0.5rem 0.15rem;
+      padding: 0.35rem 0.5rem 0.1rem;
       background: transparent;
       color: var(--text-muted);
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
       text-decoration: underline;
       text-align: center;
@@ -1094,6 +1143,38 @@
 
     .link-popup-basic:hover {
       color: var(--gold-light);
+    }
+
+    @media (max-height: 740px) {
+      .popup-container {
+        padding: 0.65rem 0.65rem 0.65rem;
+      }
+      .popup-prod-media {
+        max-width: 52px;
+      }
+      .popup-header-title {
+        font-size: 0.92rem;
+      }
+      .popup-subtitle {
+        font-size: 11.5px;
+        margin-bottom: 0.3rem;
+      }
+      .popup-diff-banner {
+        font-size: 11px;
+        padding: 0.2rem 0.35rem;
+      }
+    }
+
+    @media (max-height: 620px) {
+      .popup-prod-media {
+        max-width: 42px;
+      }
+      .popup-prod-badge {
+        display: none;
+      }
+      .popup-subtitle {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -1754,14 +1835,14 @@
         Diferença de apenas R$ 8,00 no total (R$ 2,00 por produto adicional!)
       </div>
 
-      <!-- Botao CTA pulsante e Link Secundario -->
-      <div style="display: flex; flex-direction: column; gap: 0.35rem; align-items: center;">
+      <!-- Botoes de Acao: Oferta Completa e Oferta Basica -->
+      <div style="display: flex; flex-direction: column; gap: 0.35rem; align-items: center; width: 100%;">
         <a href="https://pay.lowify.com.br/checkout?product_id=b7l4Ff" class="btn-popup-pulse"
           id="btn-checkout-premium">
           SIM! QUERO O PACOTE COMPLETO POR R$ 19,99
         </a>
-        <a href="https://pay.lowify.com.br/checkout?product_id=gE5zga" class="link-popup-basic" id="btn-checkout-basic">
-          Não, quero só o kit por R$ 11,99
+        <a href="https://pay.lowify.com.br/checkout?product_id=gE5zga" class="btn-popup-basic" id="btn-checkout-basic">
+          Não, quero apenas o Kit Básico por R$ 11,99
         </a>
       </div>
     </div>

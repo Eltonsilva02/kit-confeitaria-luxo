@@ -95,6 +95,264 @@
       padding: 0;
     }
 
+    /* ==================================================
+       BARRA SUPERIOR BLACK FRIDAY (ITEM 1)
+       ================================================== */
+    .bf-top-bar {
+      width: 100%;
+      background: linear-gradient(90deg, #7F1D1D 0%, #B91C1C 50%, #7F1D1D 100%);
+      border-bottom: 1.5px solid var(--gold-border-solid);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 9px 16px;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.45), 0 0 16px rgba(234, 179, 8, 0.35);
+      position: relative;
+      overflow: hidden;
+      z-index: 50;
+    }
+
+    /* Feixe de luz transcendental passando continuamente */
+    .bf-top-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(
+        105deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.05) 15%,
+        rgba(254, 240, 138, 0.45) 42%,
+        rgba(255, 255, 255, 0.92) 50%,
+        rgba(254, 240, 138, 0.45) 58%,
+        rgba(255, 255, 255, 0.05) 85%,
+        transparent 100%
+      );
+      transform: skewX(-25deg);
+      animation: bf-transcending-light 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      pointer-events: none;
+    }
+
+    @keyframes bf-transcending-light {
+      0% {
+        left: -120%;
+      }
+      40% {
+        left: 130%;
+      }
+      100% {
+        left: 130%;
+      }
+    }
+
+    /* CSS SEÇÃO DOS 3 BÔNUS (DOBRA 4) */
+    .bonus-showcase {
+      margin: 1.5rem 0 1.25rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .bonus-showcase-header {
+      margin-bottom: 0.25rem;
+    }
+
+    .bonus-showcase-pill {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(127, 29, 29, 0.95), rgba(185, 28, 28, 0.95));
+      color: var(--gold-light);
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      border: 1px solid var(--gold-border-solid);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+    }
+
+    .bonus-card-box {
+      background: linear-gradient(145deg, #0C3426 0%, #072219 100%);
+      border: 1.5px solid var(--gold-border-solid);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 0.95rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      position: relative;
+      text-align: center;
+    }
+
+    .bonus-card-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #7F1D1D, #B91C1C);
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      padding: 3px 12px;
+      border-radius: 9999px;
+      border: 1px solid var(--gold-border-solid);
+      margin-bottom: 0.75rem;
+    }
+
+    .bonus-card-media {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto 0.75rem auto;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1.5px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    .bonus-card-media img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .bonus-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1.25;
+      margin-bottom: 0.35rem;
+    }
+
+    .bonus-card-desc {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+    }
+
+    .bonus-price-tag {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: var(--radius-sm);
+      padding: 7px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      align-items: center;
+    }
+
+    .bonus-price-from {
+      font-size: 0.82rem;
+      color: #F87171;
+      font-weight: 600;
+    }
+
+    .bonus-price-to {
+      font-size: 0.96rem;
+      font-weight: 800;
+      color: #34D399;
+      letter-spacing: 0.02em;
+    }
+
+    .bonus-price-to strong {
+      color: #A7F3D0;
+      font-size: 1.05rem;
+    }
+
+    /* Card de Soma Total dos 3 Bônus */
+    .bonus-total-card {
+      background: linear-gradient(135deg, #7F1D1D 0%, #991B1B 50%, #7F1D1D 100%);
+      border: 2px solid var(--gold-border-solid);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1rem;
+      color: #FFFFFF;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+      margin-top: 0.35rem;
+    }
+
+    .bonus-total-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+      animation: bf-transcending-light 4s infinite;
+      pointer-events: none;
+    }
+
+    .bonus-total-title {
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .bonus-total-from {
+      font-size: 1.1rem;
+      color: #FECACA;
+      margin-bottom: 4px;
+    }
+
+    .bonus-total-to {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: var(--gold-light);
+      text-shadow: 0 0 14px rgba(254, 240, 138, 0.6);
+      line-height: 1.2;
+    }
+
+    .bonus-total-economy {
+      font-size: 0.78rem;
+      color: #FDE047;
+      margin-top: 5px;
+      font-weight: 600;
+    }
+
+    .bf-top-bar-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+    }
+
+    .bf-top-bar-headline {
+      font-size: clamp(0.78rem, 2.7vw, 0.92rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      line-height: 1.25;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      animation: bf-text-glow 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes bf-text-glow {
+      0% {
+        text-shadow: 0 0 4px rgba(254, 240, 138, 0.4), 0 0 10px rgba(234, 179, 8, 0.2);
+      }
+      100% {
+        text-shadow: 0 0 12px rgba(254, 240, 138, 0.95), 0 0 22px rgba(234, 179, 8, 0.7), 0 0 32px rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    .bf-top-bar-headline .bf-tag-gold {
+      color: var(--gold-light);
+    }
+
     /* Coluna central fixa max 480px */
     .page-wrapper {
       width: 100%;
@@ -566,8 +824,46 @@
       background: rgba(6, 25, 16, 0.85);
       border: 1px solid var(--gold-border);
       border-radius: var(--radius-md);
-      padding: 0.85rem;
+      padding: 1rem 0.85rem;
       margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .offer-bf-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #7F1D1D 0%, #B91C1C 100%);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--gold-border-solid);
+      box-shadow: 0 2px 8px rgba(185, 28, 28, 0.4);
+      margin-bottom: 0.65rem;
+    }
+
+    .offer-price-from {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .offer-price-from s {
+      color: #E28B8B;
+      text-decoration-color: #EF4444;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .offer-price-to-label {
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
     }
 
     .price-kicker {
@@ -581,11 +877,11 @@
 
     .price-highlight {
       font-family: var(--font-serif);
-      font-size: 2.4rem;
+      font-size: 2.85rem;
       font-weight: 700;
       color: var(--gold-light);
       line-height: 1;
-      text-shadow: 0 2px 10px rgba(229, 195, 101, 0.3);
+      text-shadow: 0 2px 14px rgba(229, 195, 101, 0.35);
     }
 
     .offer-closing-text {
@@ -820,12 +1116,12 @@
       background: rgba(12, 43, 28, 0.65);
       border: 1px solid var(--gold-border);
       border-radius: var(--radius-sm);
-      padding: 0.3rem 0.25rem 0.25rem;
+      padding: 0.35rem 0.25rem 0.35rem;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-between;
       position: relative;
     }
 
@@ -858,16 +1154,25 @@
       border: 1px solid rgba(229, 195, 101, 0.35);
     }
 
+    .popup-prod-badge.badge-bonus {
+      background: rgba(185, 28, 28, 0.45);
+      color: #FFFFFF;
+      border: 1px solid var(--gold-border-solid);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
     .popup-prod-media {
       width: 100%;
-      max-width: 62px;
+      max-width: 76px;
       aspect-ratio: 1 / 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 0.2rem;
+      margin: 0 auto 0.25rem;
       overflow: hidden;
-      border-radius: 5px;
+      border-radius: 6px;
     }
 
     .popup-prod-media picture,
@@ -887,6 +1192,43 @@
       font-weight: 700;
       line-height: 1.15;
       color: var(--text-light);
+    }
+
+    .popup-bonus-pricing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px;
+      margin-top: 0.25rem;
+      padding-top: 0.2rem;
+      border-top: 1px dashed rgba(229, 195, 101, 0.3);
+      width: 100%;
+    }
+
+    .bonus-price-old {
+      font-size: 9px;
+      color: #9AA79F;
+      line-height: 1.15;
+    }
+
+    .bonus-price-old s {
+      color: #E28B8B;
+      text-decoration-color: #EF4444;
+      font-weight: 600;
+    }
+
+    .bonus-price-free {
+      font-size: 10px;
+      color: var(--text-light);
+      line-height: 1.15;
+      font-weight: 600;
+    }
+
+    .price-free-highlight {
+      color: #38EF7D;
+      font-weight: 800;
+      font-size: 11.5px;
+      text-shadow: 0 0 6px rgba(56, 239, 125, 0.45);
     }
 
     /* Comparativo lado a lado */
@@ -1150,7 +1492,7 @@
         padding: 0.65rem 0.65rem 0.65rem;
       }
       .popup-prod-media {
-        max-width: 52px;
+        max-width: 64px;
       }
       .popup-header-title {
         font-size: 0.92rem;
@@ -1167,10 +1509,7 @@
 
     @media (max-height: 620px) {
       .popup-prod-media {
-        max-width: 42px;
-      }
-      .popup-prod-badge {
-        display: none;
+        max-width: 52px;
       }
       .popup-subtitle {
         display: none;
@@ -1180,6 +1519,19 @@
 </head>
 
 <body>
+
+  <!-- ==================================================
+       BARRA SUPERIOR BLACK FRIDAY (ITEM 1)
+       ================================================== -->
+  <aside class="bf-top-bar" aria-label="Aviso Black Friday">
+    <div class="bf-top-bar-inner">
+      <div class="bf-top-bar-headline">
+        <span>🖤 BLACK FRIDAY ESPECIAL</span>
+        <span class="bf-tag-gold">—</span>
+        <span>APROVEITE NOSSA OFERTA EXCLUSIVA!</span>
+      </div>
+    </div>
+  </aside>
 
   <div class="page-wrapper">
 
@@ -1194,8 +1546,9 @@
       <!-- Midia 1:1 Proporcao Original -->
       <div class="hero-media-wrap">
         <picture>
+          <source srcset="assets/Kit-Natalino-de-Confeitaria-Luxuosa.webp" type="image/webp">
           <source srcset="assets/hero-confeitaria-luxo.webp" type="image/webp">
-          <img src="https://i.ibb.co/bjGQRnRw/Kit-de-Confeitaria-de-Luxo-Natalino-1.png"
+          <img src="https://i.ibb.co/3Qzk6cN/Kit-Natalino-de-Confeitaria-Luxuosa.png"
             alt="Kit de Confeitaria de Luxo Natalino" width="800" height="800"
             fetchpriority="high" decoding="async">
         </picture>
@@ -1218,7 +1571,7 @@
       </ul>
 
       <!-- Botao ancora ate id="oferta" -->
-      <a href="#oferta" class="btn-cta">QUERO MEU KIT DE NATAL</a>
+      <a href="#oferta" class="btn-cta">🎄 QUERO MEU KIT DE NATAL</a>
       <div class="hero-microcopy">Acesso imediato em PDF. Pronto para imprimir.</div>
     </header>
 
@@ -1473,104 +1826,178 @@
          ================================================== -->
     <section class="section" style="text-align: center;">
       <span class="badge-pill">ACESSO IMEDIATO</span>
-      <h2>Tudo o Que Você Vai Receber</h2>
+      <h2>TUDO O QUE VOCÊ VAI RECEBER</h2>
       <div class="gold-divider"></div>
 
       <!-- Imagem quadrada 1:1 Proporcao Original -->
       <div class="square-media">
         <picture>
+          <source srcset="assets/Kit-Confeitaria-de-Luxo-Natalino.webp" type="image/webp">
           <source srcset="assets/receber-tudo.webp" type="image/webp">
-          <img src="https://i.ibb.co/gLgdCfJq/Kit-Confeitaria-de-Luxo-no-Natal.png"
-            alt="Tudo o que você vai receber no Kit Confeitaria de Luxo no Natal" width="800" height="800"
+          <img src="https://i.ibb.co/TDJt7d61/Kit-Confeitaria-de-Luxo-Natalino.png"
+            alt="Kit Confeitaria de Luxo no Natal" width="800" height="800"
             loading="lazy" decoding="async">
         </picture>
+      </div>
+
+      <!-- SEÇÃO DOS 3 BÔNUS EXCLUSIVOS COM ANCORAGEM DE PREÇO -->
+      <div class="bonus-showcase">
+        <div class="bonus-showcase-header">
+          <span class="bonus-showcase-pill">🎁 3 BÔNUS EXCLUSIVOS INCLUSOS</span>
+        </div>
+
+        <!-- BÔNUS 1 -->
+        <div class="bonus-card-box">
+          <span class="bonus-card-badge">🎁 BÔNUS 01</span>
+          <div class="bonus-card-media">
+            <picture>
+              <source srcset="assets/bonus-01.webp" type="image/webp">
+              <img src="https://i.ibb.co/Zt4j6Yq/Caixa-Premium-de-Doces-Natalinos-4.png"
+                alt="Bônus 1 - Guia de Medidas Premium" width="400" height="400"
+                loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="bonus-card-title">Guia de Medidas Premium</div>
+          <div class="bonus-card-desc">Tamanhos e proporções exatas para cortar e montar suas caixas com acabamento de grife sem desperdiçar material.</div>
+          <div class="bonus-price-tag">
+            <div class="bonus-price-from">Preço individual de referência: <s>R$ 37,90</s></div>
+            <div class="bonus-price-to">No pacote completo: <strong>R$ 0,00 adicional</strong></div>
+          </div>
+        </div>
+
+        <!-- BÔNUS 2 -->
+        <div class="bonus-card-box">
+          <span class="bonus-card-badge">🎁 BÔNUS 02</span>
+          <div class="bonus-card-media">
+            <picture>
+              <source srcset="assets/bonus-02.webp" type="image/webp">
+              <img src="https://i.ibb.co/zH4hcj91/Caixa-Natalina-de-Doces-Gourmet-3.png"
+                alt="Bônus 2 - Guia de Impressão de Grife" width="400" height="400"
+                loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="bonus-card-title">Guia de Impressão de Grife</div>
+          <div class="bonus-card-desc">Orientações de papéis, gramaturas e configurações para imprimir na sua impressora caseira ou gráfica com fidelidade de cores.</div>
+          <div class="bonus-price-tag">
+            <div class="bonus-price-from">Preço individual de referência: <s>R$ 27,80</s></div>
+            <div class="bonus-price-to">No pacote completo: <strong>R$ 0,00 adicional</strong></div>
+          </div>
+        </div>
+
+        <!-- BÔNUS 3 -->
+        <div class="bonus-card-box">
+          <span class="bonus-card-badge">🎁 BÔNUS 03</span>
+          <div class="bonus-card-media">
+            <picture>
+              <source srcset="assets/bonus-03.webp" type="image/webp">
+              <img src="assets/popup-prod-comp3.webp"
+                alt="Bônus 3 - Etiquetas Elegantes" width="400" height="400"
+                loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <div class="bonus-card-title">Etiquetas Elegantes</div>
+          <div class="bonus-card-desc">Tags de presente "De/Para", lacres de sacola e selos natalinos com tipografia refinada para dar o toque final.</div>
+          <div class="bonus-price-tag">
+            <div class="bonus-price-from">Preço individual de referência: <s>R$ 17,99</s></div>
+            <div class="bonus-price-to">No pacote completo: <strong>R$ 0,00 adicional</strong></div>
+          </div>
+        </div>
+
+        <!-- SOMA TOTAL DOS 3 BÔNUS -->
+        <div class="bonus-total-card">
+          <div class="bonus-total-title">VALOR TOTAL DOS 3 BÔNUS SEPARADOS:</div>
+          <div class="bonus-total-from"><s>R$ 83,69</s></div>
+          <div class="bonus-total-title">HOJE NO SEU PACOTE:</div>
+          <div class="bonus-total-to">POR R$ 0,00 ADICIONAL!</div>
+          <div class="bonus-total-economy">🎁 Você economiza R$ 83,69 levando tudo incluso!</div>
+        </div>
       </div>
 
       <!-- Grid 6 temas cobertos -->
       <div class="compact-grid-2x3" style="margin-bottom: 1.25rem;">
         <div class="compact-card">
           <span class="compact-card-emoji">📦</span>
-          <div class="compact-card-title">Cintas de Caixa</div>
-          <div class="compact-card-line">Modelos verticais e de tampa.</div>
+          <div class="compact-card-title">Artes Prontas</div>
+          <div class="compact-card-line">Para imprimir e usar.</div>
         </div>
 
         <div class="compact-card">
           <span class="compact-card-emoji">🏷️</span>
-          <div class="compact-card-title">Tags Chanfradas</div>
-          <div class="compact-card-line">Campos Para e De natalinos.</div>
+          <div class="compact-card-title">Toque de Grife</div>
+          <div class="compact-card-line">Mais charme nos detalhes.</div>
         </div>
 
         <div class="compact-card">
           <span class="compact-card-emoji">🔖</span>
-          <div class="compact-card-title">Cards de Preço</div>
-          <div class="compact-card-line">Exibição elegante dos seus valores.</div>
+          <div class="compact-card-title">Fácil de Usar</div>
+          <div class="compact-card-line">Sem criar do zero.</div>
         </div>
 
         <div class="compact-card">
           <span class="compact-card-emoji">🎀</span>
-          <div class="compact-card-title">Faixas Decorativas</div>
-          <div class="compact-card-line">Padrões refinados com tons dourados.</div>
+          <div class="compact-card-title">Natal Encantador</div>
+          <div class="compact-card-line">Presenteie com capricho.</div>
         </div>
 
         <div class="compact-card">
           <span class="compact-card-emoji">🌟</span>
-          <div class="compact-card-title">Selos Redondos</div>
-          <div class="compact-card-line">Frases de Boas Festas e carinho.</div>
+          <div class="compact-card-title">Visual Premium</div>
+          <div class="compact-card-line">Seus doces valorizados.</div>
         </div>
 
         <div class="compact-card">
           <span class="compact-card-emoji">📜</span>
-          <div class="compact-card-title">Rótulos Retangulares</div>
-          <div class="compact-card-line">Modelos especiais para potes e sacolas.</div>
+          <div class="compact-card-title">Mais Praticidade</div>
+          <div class="compact-card-line">Menos trabalho com as artes.</div>
         </div>
       </div>
 
       <!-- Botao ancora -->
-      <a href="#oferta" class="btn-cta">QUERO ACESSAR O CONTEÚDO</a>
+      <a href="#oferta" class="btn-cta">🎄 QUERO MEU KIT DE NATAL</a>
     </section>
 
     <!-- ==================================================
          DOBRA 5: IDEAL PARA VOCE QUE DESEJA (GRID 2x3 COMPACTO MEIA ALTURA)
          ================================================== -->
     <section class="section">
-      <h2>Ideal Para Você Que Deseja</h2>
+      <h2>QUER DEIXAR SEUS DOCES DE NATAL MAIS BONITOS?</h2>
       <div class="gold-divider"></div>
 
       <div class="compact-grid-2x3">
         <div class="compact-card compact-card-half">
           <span class="compact-card-emoji">🎁</span>
-          <div class="compact-card-title">Vender Mais</div>
+          <div class="compact-card-title">Impressionar na Apresentação</div>
           <div class="compact-card-line">Apresentação refinada para o Natal.</div>
         </div>
 
         <div class="compact-card compact-card-half">
           <span class="compact-card-emoji">📱</span>
-          <div class="compact-card-title">Passar Confiança</div>
-          <div class="compact-card-line">Fotos que transmitem cuidado real.</div>
+          <div class="compact-card-title">Encantar Quem Recebe</div>
+          <div class="compact-card-line">Transmita carinho e cuidado real.</div>
         </div>
 
         <div class="compact-card compact-card-half">
           <span class="compact-card-emoji">👑</span>
-          <div class="compact-card-title">Ser Referência</div>
-          <div class="compact-card-line">Destaque e fuja do comum.</div>
+          <div class="compact-card-title">Valorizar Seus Doces</div>
+          <div class="compact-card-line">Destaque e valorize suas encomendas.</div>
         </div>
 
         <div class="compact-card compact-card-half">
           <span class="compact-card-emoji">🎀</span>
-          <div class="compact-card-title">Encantar Clientes</div>
+          <div class="compact-card-title">Caprichar nos Detalhes</div>
           <div class="compact-card-line">Experiência marcante na entrega final.</div>
         </div>
 
         <div class="compact-card compact-card-half">
           <span class="compact-card-emoji">🎯</span>
-          <div class="compact-card-title">Foco Visual</div>
-          <div class="compact-card-line">Embalagem perfeita para sua receita.</div>
+          <div class="compact-card-title">Presentear com Elegância</div>
+          <div class="compact-card-line">O visual perfeito para presentear.</div>
         </div>
 
         <div class="compact-card compact-card-half">
           <span class="compact-card-emoji">💖</span>
-          <div class="compact-card-title">Cobrar Justo</div>
-          <div class="compact-card-line">Valorize seu trabalho de confeitaria.</div>
+          <div class="compact-card-title">Facilitar Sua Produção</div>
+          <div class="compact-card-line">Artes prontas para poupar tempo.</div>
         </div>
       </div>
     </section>
@@ -1579,7 +2006,7 @@
          DOBRA 6: OFERTA (UNICA OFERTA VISIVEL: PRODUTO PRINCIPAL)
          ================================================== -->
     <section class="section" id="oferta">
-      <h2>Oferta Exclusiva de Natal</h2>
+      <h2>SEU KIT NATALINO ESTÁ AQUI!</h2>
       <p class="lead-short" style="margin-bottom: 0.5rem;">
         Apresente seus doces com o visual que eles merecem.
       </p>
@@ -1587,8 +2014,8 @@
 
       <!-- 1 Card do Produto Principal (R$ 11,99) -->
       <div class="offer-box">
-        <div class="offer-product-name">Kit Confeitaria de Luxo no Natal</div>
-        <div class="offer-product-subtitle">Coleção Digital de Artes para Imprimir</div>
+        <div class="offer-product-name">KIT CONFEITARIA DE LUXO NO NATAL</div>
+        <div class="offer-product-subtitle">Artes prontas para deixar seus doces mais encantadores.</div>
         <p class="offer-product-desc">
           Artes de embalagem, tags e cards de preço em PDF para imprimir e encantar.
         </p>
@@ -1605,7 +2032,7 @@
         <ul class="offer-checklist">
           <li>
             <span class="check-icon">✓</span>
-            <span>Coleção de embalagens premium para imprimir</span>
+            <span>Embalagens premium prontas para imprimir</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
@@ -1622,12 +2049,15 @@
         </ul>
 
         <div class="offer-price-tag">
-          <span class="price-kicker">Pagamento único</span>
+          <div class="offer-bf-badge">BLACK FRIDAY — OFERTA ESPECIAL</div>
+          <div class="offer-price-from">De: <s>R$ 57,99</s></div>
+          <div class="offer-price-to-label">Por apenas:</div>
           <div class="price-highlight">R$ 11,99</div>
+          <span class="price-kicker" style="margin-top: 0.35rem; margin-bottom: 0;">Pagamento único</span>
         </div>
 
         <!-- SÓ este botao abre o POPUP -->
-        <button type="button" class="btn-cta" id="open-offer-popup">QUERO ACESSAR AGORA</button>
+        <button type="button" class="btn-cta" id="open-offer-popup">🎄 QUERO MEU KIT POR R$ 11,99</button>
 
         <div class="offer-closing-text">
           Produto 100% digital em PDF. Imprima quando quiser.
@@ -1641,9 +2071,9 @@
     <section class="section">
       <div class="guarantee-box">
         <div class="guarantee-badge">7<br><span style="font-size: 0.65rem; text-transform: uppercase;">Dias</span></div>
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--gold-light);">Garantia Incondicional</h3>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--gold-light);">SEU PEDIDO COM 7 DIAS DE GARANTIA</h3>
         <p class="guarantee-text">
-          Você pode pedir reembolso em até 7 dias a partir da compra, pelo art. 49 do CDC.
+          Conheça o material com a tranquilidade da nossa garantia de 7 dias.
         </p>
       </div>
     </section>
@@ -1659,78 +2089,77 @@
         <!-- Pergunta 1 -->
         <details class="faq-item">
           <summary class="faq-summary">
-            <span>É curso?</span>
+            <span>O que vou receber?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Não. É um kit digital com arquivos em PDF para imprimir.</p>
+            <p>Você recebe um kit digital com artes natalinas para imprimir e deixar a apresentação dos seus doces mais bonita.</p>
           </div>
         </details>
 
         <!-- Pergunta 2 -->
         <details class="faq-item">
           <summary class="faq-summary">
-            <span>Tem receitas?</span>
+            <span>É fácil de usar?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Não. O foco é apresentação e artes de embalagem para imprimir.</p>
+            <p>Sim! As artes já vêm prontas. Basta seguir as orientações dos arquivos para imprimir e utilizar.</p>
           </div>
         </details>
 
         <!-- Pergunta 3 -->
         <details class="faq-item">
           <summary class="faq-summary">
-            <span>Vem embalagem física?</span>
+            <span>Vou receber algum produto físico?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Não. O kit traz artes digitais para você imprimir.</p>
+            <p>Não. O kit é 100% digital. Nenhum produto físico será enviado.</p>
           </div>
         </details>
 
         <!-- Pergunta 4 -->
         <details class="faq-item">
           <summary class="faq-summary">
-            <span>Os materiais de impressão estão inclusos?</span>
+            <span>Como recebo meu kit?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Não. Papel, tinta e demais materiais ficam por sua conta.</p>
+            <p>Após a confirmação do pagamento, você recebe as instruções para acessar seu material digital.</p>
           </div>
         </details>
 
         <!-- Pergunta 5 -->
         <details class="faq-item">
           <summary class="faq-summary">
-            <span>Como acesso e uso os arquivos?</span>
+            <span>Posso usar para vender meus doces?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Você pode acessar e visualizar os arquivos em PDF pelo celular, tablet ou computador, prontos para enviar
-              para impressão.</p>
+            <p>Você pode utilizar as artes na apresentação dos seus doces, respeitando as condições de uso do material.</p>
           </div>
         </details>
 
         <!-- Pergunta 6 -->
         <details class="faq-item">
           <summary class="faq-summary">
-            <span>Como recebo o acesso?</span>
+            <span>Posso imprimir quantas vezes quiser?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Após a confirmação do pagamento, a Lowify envia o acesso para o seu e-mail.</p>
+            <p>Confira as orientações e a licença de uso incluídas no kit para saber as condições de impressão.</p>
           </div>
         </details>
 
-        <!-- Pergunta 7 (Reembolso, aberta por padrao) -->
+        <!-- Pergunta 7 -->
         <details class="faq-item" open>
           <summary class="faq-summary">
-            <span>Qual é a política de reembolso?</span>
+            <span>Minha compra tem garantia?</span>
             <span class="faq-arrow">▼</span>
           </summary>
           <div class="faq-content">
-            <p>Você pode pedir reembolso em até 7 dias a partir da compra, pelo art. 49 do CDC.</p>
+            <p>Sim, conforme as condições da garantia informadas nesta página.</p>
           </div>
         </details>
       </div>
@@ -1756,14 +2185,14 @@
     <div class="popup-container">
       <button type="button" class="popup-close-btn" id="close-offer-popup" aria-label="Fechar janela">✕</button>
 
-      <div class="popup-header-title" id="popup-title">ESPERE! POR SÓ R$ 8 A MAIS LEVE O PACOTE COMPLETO</div>
-      <div class="popup-subtitle">Você leva o produto principal + 3 produtos complementares exclusivos:</div>
+      <div class="popup-header-title" id="popup-title">🎁 POR MAIS R$ 8, LEVE OS 3 BÔNUS!</div>
+      <div class="popup-subtitle">Seu kit pode ficar ainda mais completo com 3 materiais extras!</div>
 
       <!-- Grid dos 4 Produtos com Imagens 1:1 Proporcionais -->
       <div class="popup-products-grid">
         <!-- Produto Principal -->
         <div class="popup-prod-card is-main">
-          <span class="popup-prod-badge badge-main">PRODUTO PRINCIPAL</span>
+          <span class="popup-prod-badge badge-main">SEU KIT PRINCIPAL</span>
           <div class="popup-prod-media">
             <picture>
               <source srcset="assets/popup-prod-principal.webp" type="image/webp">
@@ -1771,12 +2200,15 @@
                 alt="Kit de Confeitaria Natalina de Luxo" width="500" height="500" loading="lazy" decoding="async">
             </picture>
           </div>
-          <div class="popup-prod-name">Kit Confeitaria Natalina</div>
+          <div class="popup-prod-name">Kit Confeitaria de Luxo no Natal</div>
+          <div class="popup-bonus-pricing">
+            <span class="bonus-price-free" style="color: var(--gold-light);">Seu kit de artes natalinas.</span>
+          </div>
         </div>
 
-        <!-- Complementar 01 -->
+        <!-- BÔNUS 1 -->
         <div class="popup-prod-card">
-          <span class="popup-prod-badge badge-comp">+ COMPLEMENTAR 01</span>
+          <span class="popup-prod-badge badge-bonus">🎁 BÔNUS 01</span>
           <div class="popup-prod-media">
             <picture>
               <source srcset="assets/popup-prod-comp1.webp" type="image/webp">
@@ -1785,11 +2217,15 @@
             </picture>
           </div>
           <div class="popup-prod-name">Guia de Medidas Premium</div>
+          <div class="popup-bonus-pricing">
+            <span class="bonus-price-old">De: <s>R$ 37,90</s></span>
+            <span class="bonus-price-free">Por: <strong class="price-free-highlight">R$ 0,00 adicional</strong></span>
+          </div>
         </div>
 
-        <!-- Complementar 02 -->
+        <!-- BÔNUS 2 -->
         <div class="popup-prod-card">
-          <span class="popup-prod-badge badge-comp">+ COMPLEMENTAR 02</span>
+          <span class="popup-prod-badge badge-bonus">🎁 BÔNUS 02</span>
           <div class="popup-prod-media">
             <picture>
               <source srcset="assets/popup-prod-comp2.webp" type="image/webp">
@@ -1798,11 +2234,15 @@
             </picture>
           </div>
           <div class="popup-prod-name">Guia de Impressão de Grife</div>
+          <div class="popup-bonus-pricing">
+            <span class="bonus-price-old">De: <s>R$ 27,80</s></span>
+            <span class="bonus-price-free">Por: <strong class="price-free-highlight">R$ 0,00 adicional</strong></span>
+          </div>
         </div>
 
-        <!-- Complementar 03 -->
+        <!-- BÔNUS 3 -->
         <div class="popup-prod-card">
-          <span class="popup-prod-badge badge-comp">+ COMPLEMENTAR 03</span>
+          <span class="popup-prod-badge badge-bonus">🎁 BÔNUS 03</span>
           <div class="popup-prod-media">
             <picture>
               <source srcset="assets/popup-prod-comp3.webp" type="image/webp">
@@ -1811,6 +2251,10 @@
             </picture>
           </div>
           <div class="popup-prod-name">Etiquetas Elegantes</div>
+          <div class="popup-bonus-pricing">
+            <span class="bonus-price-old">De: <s>R$ 17,99</s></span>
+            <span class="bonus-price-free">Por: <strong class="price-free-highlight">R$ 0,00 adicional</strong></span>
+          </div>
         </div>
       </div>
 
@@ -1818,31 +2262,31 @@
       <div class="popup-comparison-grid">
         <div class="popup-comp-card popup-comp-basic">
           <span class="comp-name">SÓ O KIT</span>
-          <span class="comp-count">1 produto</span>
+          <span class="comp-count">Kit principal</span>
           <span class="comp-price">R$ 11,99</span>
         </div>
 
         <div class="popup-comp-card popup-comp-premium">
-          <span class="popup-badge-chosen">MAIS ESCOLHIDO</span>
+          <span class="popup-badge-chosen">MAIS CONTEÚDO</span>
           <span class="comp-name">PACOTE COMPLETO</span>
-          <span class="comp-count">4 coleções</span>
+          <span class="comp-count">Kit + 3 bônus</span>
           <span class="comp-price">R$ 19,99</span>
         </div>
       </div>
 
       <!-- Faixa da diferenca -->
       <div class="popup-diff-banner">
-        Diferença de apenas R$ 8,00 no total (R$ 2,00 por produto adicional!)
+        SEU KIT JÁ É SEU. COMPLETE COM 3 BÔNUS POR +R$ 8!
       </div>
 
       <!-- Botoes de Acao: Oferta Completa e Oferta Basica -->
       <div style="display: flex; flex-direction: column; gap: 0.35rem; align-items: center; width: 100%;">
         <a href="https://pay.lowify.com.br/checkout?product_id=b7l4Ff" class="btn-popup-pulse"
           id="btn-checkout-premium">
-          SIM! QUERO O PACOTE COMPLETO POR R$ 19,99
+          🎁 SIM! QUERO TUDO POR R$ 19,99
         </a>
         <a href="https://pay.lowify.com.br/checkout?product_id=gE5zga" class="btn-popup-basic" id="btn-checkout-basic">
-          Não, quero apenas o Kit Básico por R$ 11,99
+          Não, quero só o kit por R$ 11,99
         </a>
       </div>
     </div>

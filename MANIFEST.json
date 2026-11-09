@@ -96,8 +96,8 @@
     "sha256": "b62f902e44a909b25d0c6412bc28c74a39fd362dabcd586646a72462bbfb12ae"
   },
   "assets/hero-confeitaria-luxo.webp": {
-    "bytes": 154350,
-    "sha256": "5c201ff8641ab9e5918a0661cbdeaa18643936c94b6a73984d605118bbbed91b"
+    "bytes": 527748,
+    "sha256": "94bb93cfb64e57382bc0b2358360e0bbf40aab9eabf635995e25c835f3c9e65d"
   },
   "assets/oferta-produto.webp": {
     "bytes": 154350,
@@ -120,11 +120,219 @@
     "sha256": "0846934388d09e863c6f5723c76a7b6d95e8a16cd328fc8b692ccb8ac77dec0c"
   },
   "assets/receber-tudo.webp": {
-    "bytes": 200988,
-    "sha256": "ed72110efe1ee206881caeae8d412766f9cecfad8a001e0222248f1580125554"
+    "bytes": 400766,
+    "sha256": "39c90ee52b865db588e5488eadf668f7dad6244dbff0be7cf892f38c92bb37d7"
   },
   "index.html": {
-    "bytes": 61661,
-    "sha256": "45d5ebc69f0fa1c929edbeec3860c6b6ea31ce53d5780631bc7dd3bd61e35530"
+    "bytes": 78159,
+    "sha256": "8caaf4e1cb78596084c1801fd4822aa431fd33bd58899bbb8c888bfec8c35b00"
+  },
+  "assets/Kit-Confeitaria-de-Luxo-Natalino.webp": {
+    "bytes": 447020,
+    "sha256": "291b615895b0b1bed7edfc06eaff909e557fee9ead88e5cf6591c4917c5d4f9c"
+  },
+  "assets/bonus-01.webp": {
+    "bytes": 254034,
+    "sha256": "44c3a08e7641ad58ccb5898e37ce94cca9a94cbe8124b87a727df4026d20cfb1"
+  },
+  "assets/bonus-02.webp": {
+    "bytes": 301362,
+    "sha256": "d2823df5839ad74c459c3643a51d916f619d0eae53a4c7604087afbc356bf9c2"
+  },
+  "assets/bonus-03.webp": {
+    "bytes": 248948,
+    "sha256": "81dbd36c130ffcedb1620818d09ab50b2b4856abe6525c8d2f05bce26184bd87"
+  },
+  "assets\\bonus-01.webp": {
+    "bytes": 254034,
+    "sha256": "44c3a08e7641ad58ccb5898e37ce94cca9a94cbe8124b87a727df4026d20cfb1"
+  },
+  "assets\\bonus-02.webp": {
+    "bytes": 301362,
+    "sha256": "d2823df5839ad74c459c3643a51d916f619d0eae53a4c7604087afbc356bf9c2"
+  },
+  "assets\\bonus-03.webp": {
+    "bytes": 248948,
+    "sha256": "81dbd36c130ffcedb1620818d09ab50b2b4856abe6525c8d2f05bce26184bd87"
+  },
+  "assets\\bonus1.png": {
+    "bytes": 2186034,
+    "sha256": "00a30fe5c711cfde9bc51e64e798f06244ccb19e6f04efd78815e478463900fc"
+  },
+  "assets\\bonus2.png": {
+    "bytes": 2403142,
+    "sha256": "e4ba7cd69668b06a4f8477cde1f376095741e91866355de6debe9465fc2a773a"
+  },
+  "assets\\capa-01.webp": {
+    "bytes": 48462,
+    "sha256": "917d9ccb0b376daeee9031d81df1ffefb430a6da18f20ce125f0e4a817a81e73"
+  },
+  "assets\\capa-02.webp": {
+    "bytes": 64932,
+    "sha256": "c34fcb90b8c0b6a6f0eec6ca65bf984ae661a63d092b3c106131865e27be63bf"
+  },
+  "assets\\capa-03.webp": {
+    "bytes": 55734,
+    "sha256": "2a29829097d168ea60fa3d7d9767433a94d7558d8ddd8af3276d499ef27272b3"
+  },
+  "assets\\carrossel-01.webp": {
+    "bytes": 24164,
+    "sha256": "a187ed42942f1f9c8efb840fdb1ad88c5012bb81593416598433b2dbb39b6f47"
+  },
+  "assets\\carrossel-02.webp": {
+    "bytes": 42468,
+    "sha256": "483f54a7a029951d80a6c15b180f94983d281bb2de8e0b72feb9a4b9d0c7e13b"
+  },
+  "assets\\carrossel-03.webp": {
+    "bytes": 34720,
+    "sha256": "0610dde10a8555a49ad1d92c0f61e06ecc64877b57668fb027a76b2b623b3192"
+  },
+  "assets\\carrossel-04.webp": {
+    "bytes": 78484,
+    "sha256": "b4d769393fa0111f2c94c5b4cd35d7272081182191ad797025507b4f3915cf3c"
+  },
+  "assets\\carrossel-05.webp": {
+    "bytes": 30330,
+    "sha256": "478660b5b9bb80b4b36712463638a7725cc7b26e4d42d00ed60271c7a78679c3"
+  },
+  "assets\\carrossel-06.webp": {
+    "bytes": 23230,
+    "sha256": "b62f902e44a909b25d0c6412bc28c74a39fd362dabcd586646a72462bbfb12ae"
+  },
+  "assets\\hero-confeitaria-luxo.webp": {
+    "bytes": 154350,
+    "sha256": "5c201ff8641ab9e5918a0661cbdeaa18643936c94b6a73984d605118bbbed91b"
+  },
+  "assets\\Kit-Confeitaria-de-Luxo-Natalino.png": {
+    "bytes": 2802091,
+    "sha256": "4601771590f943c2596c9ad9451a329c1c2cf900c63e9c53e2c197b68081e794"
+  },
+  "assets\\Kit-Confeitaria-de-Luxo-Natalino.webp": {
+    "bytes": 447020,
+    "sha256": "291b615895b0b1bed7edfc06eaff909e557fee9ead88e5cf6591c4917c5d4f9c"
+  },
+  "assets\\oferta-produto.webp": {
+    "bytes": 154350,
+    "sha256": "5c201ff8641ab9e5918a0661cbdeaa18643936c94b6a73984d605118bbbed91b"
+  },
+  "assets\\popup-prod-comp1.webp": {
+    "bytes": 44720,
+    "sha256": "2b31705b322f9ac19be9da2a1cc22d70408acd08c35731fb2dc0c38e4b2ff4dd"
+  },
+  "assets\\popup-prod-comp2.webp": {
+    "bytes": 50138,
+    "sha256": "91bf289f937e05e11a3828bd9f6e28c25ae33a66bb3c1a79b308a03d20bf5ca9"
+  },
+  "assets\\popup-prod-comp3.webp": {
+    "bytes": 55964,
+    "sha256": "38fbd879dde3768ea7c7696a24356e7704d575dd4aea051ab75f9ec56ac3a112"
+  },
+  "assets\\popup-prod-principal.webp": {
+    "bytes": 56644,
+    "sha256": "0846934388d09e863c6f5723c76a7b6d95e8a16cd328fc8b692ccb8ac77dec0c"
+  },
+  "assets\\previa-catalogo.webp": {
+    "bytes": 50590,
+    "sha256": "a0dd9a171ba0cc50f14787841c9ade24cad7409138b3b517f15b43843ff6cfcd"
+  },
+  "assets\\previa-guia.webp": {
+    "bytes": 97080,
+    "sha256": "4d873ad09092c097ea0569978b86bd7c526ab766763b97630576df98a7397c32"
+  },
+  "assets\\previa-tags.webp": {
+    "bytes": 54350,
+    "sha256": "ccc64f0db73c871c585137b8b5567629cfe4bc687fa7f3443e9ca85a5760d112"
+  },
+  "assets\\previa-vitrine.webp": {
+    "bytes": 119772,
+    "sha256": "f23b2b34821f3ddbda3573fbe3865c34157dc73daae2645aea80953637468e60"
+  },
+  "assets\\receber-tudo.webp": {
+    "bytes": 400766,
+    "sha256": "39c90ee52b865db588e5488eadf668f7dad6244dbff0be7cf892f38c92bb37d7"
+  },
+  "assets\\novos\\carrossel-01.png": {
+    "bytes": 1264838,
+    "sha256": "3f40866a171303684e6f33c340e5005b4a01a368249b25b4dbd46e32d1be36a6"
+  },
+  "assets\\novos\\carrossel-02.png": {
+    "bytes": 2545994,
+    "sha256": "efb11c05d03136a3f7178f00a6fb39f237071fd33c924569fc9cb1d8a3b72322"
+  },
+  "assets\\novos\\carrossel-03.png": {
+    "bytes": 1628385,
+    "sha256": "684cc4277743626a3c2242b96a8920563214231ea506d85232dd51dcdb552182"
+  },
+  "assets\\novos\\carrossel-04.png": {
+    "bytes": 2075088,
+    "sha256": "91b5d42b3ee40b5a314da1ad422718b44c13ac7cd22c60e4f2198824b89739e7"
+  },
+  "assets\\novos\\carrossel-05.png": {
+    "bytes": 962816,
+    "sha256": "0c0ce6b0e5a83412bd72f876f93d8ef6c2e5bff8fb379de2bb2abeb61d8e8dbf"
+  },
+  "assets\\novos\\carrossel-06.png": {
+    "bytes": 573151,
+    "sha256": "77afd99ab361d5760bd30e8cb1f07bf625ebdb8f2fed60cdfcdecbff0462007a"
+  },
+  "assets\\novos\\carrossel_01.webp": {
+    "bytes": 117832,
+    "sha256": "339b5e8dd109f3a088e105fe1fa9f6fd6327f523a9143f77118351766a2f67d9"
+  },
+  "assets\\novos\\carrossel_02.webp": {
+    "bytes": 35030,
+    "sha256": "862d772b27ddcd07fc608b4e71b917d546f78654fb68c70a27b9aad0ec1e8777"
+  },
+  "assets\\novos\\carrossel_03.webp": {
+    "bytes": 52104,
+    "sha256": "624a0dcaaa5a486b9baea0147a76cb3a20d60e47e6b1ab1345fc7a5ad3af81c2"
+  },
+  "assets\\novos\\carrossel_04.webp": {
+    "bytes": 72358,
+    "sha256": "400a602647013730b9d552b59a2d84cb8c3b864141343d11a1f5ef72ee25d84b"
+  },
+  "assets\\novos\\carrossel_05.webp": {
+    "bytes": 64956,
+    "sha256": "f20215b66f1098f61df00beb919d6bc2ffea327cd90f95a5e175842984e9dff9"
+  },
+  "assets\\novos\\carrossel_06.webp": {
+    "bytes": 96796,
+    "sha256": "4db898543b39f0b4ea6677da5d102c4ed74ef2d1645d0482722b2ae906b0ff09"
+  },
+  "assets\\novos\\dobra4_receber.webp": {
+    "bytes": 435394,
+    "sha256": "cdabb2faeff002386aed87b51401cdef0677582a26a63ed1119cb76244b34d5c"
+  },
+  "assets\\novos\\dobra6_oferta.webp": {
+    "bytes": 337030,
+    "sha256": "32ea68ed83d4c793f217a0e68cab7496df0014ec5980167b0d3700c5e8ce2e0f"
+  },
+  "assets\\novos\\hero_dobra1.webp": {
+    "bytes": 337030,
+    "sha256": "32ea68ed83d4c793f217a0e68cab7496df0014ec5980167b0d3700c5e8ce2e0f"
+  },
+  "assets\\novos\\popup_comp1.webp": {
+    "bytes": 206680,
+    "sha256": "a53a8bf39f3ab3cd9ed41855084e43f51a1a3026e4cafbff8a85764c9cb7cbac"
+  },
+  "assets\\novos\\popup_comp2.webp": {
+    "bytes": 253900,
+    "sha256": "68ac0c7b8212879211575875e01d058fbbf00ee3e5d6c8b1c100091d347c8b62"
+  },
+  "assets\\novos\\popup_comp3.webp": {
+    "bytes": 241280,
+    "sha256": "8b0fbaf7888df029fb3fa0f4f72343ae166a598c40de913d156f73b29b071ddf"
+  },
+  "assets\\novos\\popup_principal.webp": {
+    "bytes": 260954,
+    "sha256": "f09a693a54464dc9b7aaf667b39d82cc98b301eebd25b5bf57d277f377f45a10"
+  },
+  "assets/Kit-Natalino-de-Confeitaria-Luxuosa.webp": {
+    "bytes": 527748,
+    "sha256": "94bb93cfb64e57382bc0b2358360e0bbf40aab9eabf635995e25c835f3c9e65d"
+  },
+  "assets/Kit-Natalino-de-Confeitaria-Luxuosa.png": {
+    "bytes": 2957449,
+    "sha256": "bee201346e71661530486b03437f4b92bfa2a059ae649c9049a126324699df44"
   }
 }

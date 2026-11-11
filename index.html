@@ -908,36 +908,55 @@
        DOBRA 7: GARANTIA
        -------------------------------------------------- */
     .guarantee-box {
-      background: var(--bg-card);
-      border: 1px solid var(--gold-border);
+      background: linear-gradient(145deg, #123b29, var(--bg-card-alt));
+      border: 1px solid var(--gold-border-solid);
       border-radius: var(--radius-md);
-      padding: 1.25rem 1rem;
+      padding: 1.75rem 1.25rem;
       text-align: center;
       margin-top: 0.75rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
     }
 
     .guarantee-badge {
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 60px;
-      height: 60px;
+      width: 86px;
+      height: 86px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
       color: var(--bg-dark);
       font-family: var(--font-serif);
       font-weight: 800;
-      font-size: 1.05rem;
-      line-height: 1.1;
-      margin-bottom: 0.75rem;
+      font-size: 2.5rem;
+      line-height: 0.9;
+      margin-bottom: 1rem;
       box-shadow: 0 4px 15px rgba(229, 195, 101, 0.3);
+    }
+
+    .guarantee-badge span {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      line-height: 1;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 0.35rem;
+    }
+
+    .guarantee-title {
+      font-size: 1.25rem;
+      color: var(--gold-light);
+      margin-bottom: 0.65rem;
     }
 
     .guarantee-text {
       font-size: 0.925rem;
-      line-height: 1.45;
+      line-height: 1.55;
       color: var(--text-light);
       font-weight: 500;
+      max-width: 350px;
+      margin: 0 auto;
     }
 
     /* --------------------------------------------------
@@ -1708,6 +1727,10 @@
             <span class="check-icon">✓</span>
             <span>Acesso digital após a confirmação do pagamento</span>
           </li>
+          <li>
+            <span class="check-icon">✓</span>
+            <span>Garantia de 7 dias para solicitar reembolso</span>
+          </li>
         </ul>
 
         <div class="offer-price-tag">
@@ -1731,8 +1754,8 @@
          ================================================== -->
     <section class="section">
       <div class="guarantee-box">
-        <div class="guarantee-badge">7<br><span style="font-size: 0.65rem; text-transform: uppercase;">Dias</span></div>
-        <h3 style="font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--gold-light);">SEU PEDIDO COM 7 DIAS DE GARANTIA</h3>
+        <div class="guarantee-badge">7<span>dias</span></div>
+        <h3 class="guarantee-title">SEU PEDIDO COM 7 DIAS DE GARANTIA</h3>
         <p class="guarantee-text">
           Você pode pedir reembolso em até 7 dias a partir da compra, pelo art. 49 do CDC.
         </p>
